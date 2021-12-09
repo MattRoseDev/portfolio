@@ -1,0 +1,8 @@
+.wrapper {
+  @apply flex flex-col items-center justify-center;
+  @apply h-screen bg-gray-900 text-white;
+}
+
+.title {
+  @apply font-bold text-5xl;
+}

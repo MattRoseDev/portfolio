@@ -1,0 +1,6 @@
+node_modules/
+build/
+cypress/
+public/
+src/setupTests.ts
+dist/
