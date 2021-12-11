@@ -1,0 +1,10 @@
+.navigation {
+  @apply flex items-center justify-center md:justify-end;
+  @apply w-full my-12;
+}
+
+.navItem {
+  @apply p-2 md:py-3 md:px-4 font-medium;
+  @apply text-gray-300 hover:text-yellow-400;
+  @apply transition-all duration-200;
+}
