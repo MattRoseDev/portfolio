@@ -1,0 +1,4 @@
+.wrapper {
+  @apply flex flex-col justify-center;
+  @apply container mx-auto md:max-w-7xl;
+}
