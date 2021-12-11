@@ -10,11 +10,11 @@
 
 .socialItem {
   @apply flex items-center justify-center;
-  @apply w-10 h-10 md:mb-1 cursor-pointer relative;
+  @apply w-12 h-12 md:mb-1 cursor-pointer relative;
   @apply hover:text-yellow-400;
   @apply transition-all duration-200;
 }
 
-.socialItem svg {
-  @apply md:hover:mb-2 transition-all duration-200 absolute;
+.socialItem:hover svg {
+  @apply md:mb-2 transition-all duration-200 absolute;
 }
