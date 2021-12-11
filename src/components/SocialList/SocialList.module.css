@@ -1,0 +1,20 @@
+.socialList {
+  @apply flex md:flex-col justify-center text-gray-300;
+  @apply md:fixed md:bottom-0 md:left-10;
+}
+
+.socialList::after {
+  @apply hidden md:block w-px h-24 content-[""] mt-5 mx-auto;
+  @apply bg-gray-300;
+}
+
+.socialItem {
+  @apply flex items-center justify-center;
+  @apply w-10 h-10 md:mb-1 cursor-pointer relative;
+  @apply hover:text-yellow-400;
+  @apply transition-all duration-200;
+}
+
+.socialItem svg {
+  @apply md:hover:mb-2 transition-all duration-200 absolute;
+}
