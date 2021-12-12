@@ -1,11 +1,12 @@
 import styles from "./Home.module.css";
+import { SocialList } from "@components/SocialList";
+import { Hero } from "@features/Hero";
 
 export function Home() {
   return (
     <div className={styles.wrapper}>
-      <div>
-        <h1 className={styles.title}>Hey, I&apos;m Mahdi</h1>
-      </div>
+      <Hero />
+      <SocialList />
     </div>
   );
 }
