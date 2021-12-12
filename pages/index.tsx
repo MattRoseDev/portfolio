@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Home } from "@features/Home";
+import { Layout } from "src/components/Layout";
 import type { NextPage } from "next";
 
 const HomePage: NextPage = () => {
@@ -8,8 +9,9 @@ const HomePage: NextPage = () => {
       <Head>
         <title>Favecode</title>
       </Head>
-
-      <Home />
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 };

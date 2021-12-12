@@ -1,0 +1,13 @@
+.hero {
+  @apply flex flex-col justify-start mx-auto;
+  @apply md:p-5 text-white md:mx-20;
+}
+
+.bigHeading {
+  @apply font-extrabold text-3xl md:text-6xl my-2 text-gray-400;
+  @apply first:text-4xl first:md:text-7xl first:text-gray-50;
+}
+
+.description {
+  @apply md:text-xl text-gray-300 md:w-4/6 mt-3 md:mt-5;
+}
