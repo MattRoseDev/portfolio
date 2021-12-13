@@ -1,9 +1,13 @@
-import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+import { SafeHydrate } from "@components/SafeHydrate";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <SafeHydrate>
+      <Component {...pageProps} />
+    </SafeHydrate>
+  );
 }
 
 export default MyApp;
