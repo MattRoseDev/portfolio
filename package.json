@@ -12,7 +12,7 @@
     "release:hotfix": "standard-version --release-as patch",
     "release:non-breaking": "standard-version --release-as minor",
     "start": "next start",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch"
   },
   "dependencies": {
