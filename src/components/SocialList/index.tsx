@@ -7,7 +7,7 @@ export function SocialList() {
     {
       title: "Github",
       icon: <Icon name="github" className="h-7" />,
-      href: "https://github.com/favecode",
+      href: "https://github.com/mahdineer",
     },
     {
       title: "Linkedin",
