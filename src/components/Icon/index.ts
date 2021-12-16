@@ -1,12 +1,17 @@
-import classNames from "classnames";
 import { createElement, SVGAttributes } from "react";
 
+import CameraFill from "./svg/camera-fill.svg";
+import Camera from "./svg/camera.svg";
 import GithubFill from "./svg/github-fill.svg";
 import Github from "./svg/github.svg";
 import LinkedinFill from "./svg/linkedin-fill.svg";
 import Linkedin from "./svg/linkedin.svg";
 
 export const iconsList = {
+  camera: {
+    outline: Camera,
+    fill: CameraFill,
+  },
   github: {
     outline: Github,
     fill: GithubFill,
@@ -26,10 +31,6 @@ export interface IconProps extends SVGAttributes<SVGElement> {
 }
 
 export function Icon({ name, className, type, ...props }: IconProps) {
-  const classes = classNames({
-    icon: true,
-  });
-
   const icon = iconsList[name][type || "outline"];
 
   if (!icon) {
@@ -37,7 +38,7 @@ export function Icon({ name, className, type, ...props }: IconProps) {
   }
 
   return createElement(icon, {
-    className: `${classes} ${className}`,
+    className,
     role: "icon",
     ...props,
   });
