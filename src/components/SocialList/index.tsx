@@ -10,6 +10,11 @@ export function SocialList() {
       href: "https://github.com/mahdineer",
     },
     {
+      title: "Unsplash",
+      icon: <Icon name="camera" className="h-7" />,
+      href: "https://unsplash.com/@mahdineer",
+    },
+    {
       title: "Linkedin",
       icon: <Icon name="linkedin" className="h-7" />,
       href: "https://www.linkedin.com/in/mahdi-rostamzadeh/",
@@ -19,8 +24,12 @@ export function SocialList() {
   return (
     <ul className={styles.socialList}>
       {socialList.map(({ title, href, icon }) => (
-        <li className={styles.socialItem} key={title}>
-          <Link href={href}>{icon}</Link>
+        <li key={title}>
+          <Link href={href}>
+            <a className={styles.socialItem} target="_blank">
+              {icon}
+            </a>
+          </Link>
         </li>
       ))}
     </ul>
