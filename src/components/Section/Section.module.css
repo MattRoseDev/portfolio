@@ -1,14 +1,18 @@
 .section {
   @apply flex flex-col justify-start;
-  @apply md:p-5 md:px-28 text-white w-full;
+  @apply md:p-5 md:px-44 text-white w-full;
 }
 
 .title {
   @apply flex font-bold text-3xl mt-2 mb-8 text-gray-200;
 }
 
+.title span {
+  @apply whitespace-nowrap;
+}
+
 .title::after {
-  @apply w-64 h-px content-[""] ml-5 my-auto;
+  @apply w-80 h-px content-[""] ml-5 my-auto;
   @apply bg-gray-700;
 }
 
