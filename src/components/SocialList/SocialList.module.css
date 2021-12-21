@@ -1,6 +1,6 @@
 .socialList {
   @apply flex md:flex-col justify-center text-gray-300;
-  @apply md:fixed md:bottom-0 md:left-10;
+  @apply md:fixed md:bottom-0 md:left-10 mt-10;
 }
 
 .socialList::after {
@@ -10,8 +10,9 @@
 
 .socialItem {
   @apply flex items-center justify-center;
-  @apply w-12 h-12 md:mb-1 cursor-pointer relative;
-  @apply hover:text-yellow-400;
+  @apply mx-3 md:mx-0 md:mb-1 cursor-pointer relative;
+  @apply w-10 h-10 md:w-12 md:h-12;
+  @apply hover:text-yellow-400 border-2 rounded-lg md:border-0;
   @apply transition-all duration-200;
 }
 

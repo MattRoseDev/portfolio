@@ -1,6 +1,6 @@
 .section {
   @apply flex flex-col justify-start;
-  @apply md:p-5 md:px-44 text-white w-full;
+  @apply md:p-5 md:px-44 pt-8 text-white w-full;
 }
 
 .title {
