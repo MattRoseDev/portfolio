@@ -1,0 +1,15 @@
+.description {
+  @apply md:text-lg text-gray-300 md:w-4/6 mt-3 md:mt-4 leading-7;
+}
+
+.skills {
+  @apply flex flex-wrap w-full md:w-[30rem] font-mono mt-3;
+
+  & .skill {
+    @apply w-full sm:w-1/2 text-sm pt-2 text-gray-100;
+  }
+
+  & .skill::before {
+    @apply content-["-"] pr-2.5 text-yellow-400;
+  }
+}
