@@ -1,0 +1,11 @@
+.contact {
+  @apply mx-auto my-20 md:w-[40rem] text-lg text-center;
+  & .title {
+    @apply font-bold text-center md:text-5xl mb-8;
+  }
+
+  & .email {
+    @apply py-2 px-5 mt-10 rounded-full font-medium;
+    @apply bg-yellow-400 text-gray-900;
+  }
+}
