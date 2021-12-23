@@ -1,7 +1,7 @@
 .contact {
-  @apply mx-auto my-20 md:w-[40rem] text-lg text-center;
+  @apply mx-auto py-44 md:w-[35rem] text-base md:text-lg text-center;
   & .title {
-    @apply font-bold text-center md:text-5xl mb-8;
+    @apply font-bold text-center text-4xl md:text-5xl mb-14;
   }
 
   & .email {
