@@ -6,18 +6,23 @@ export function SocialList() {
   const socialList = [
     {
       title: "Github",
-      icon: <Icon name="github" className="h-6 md:h-7" />,
+      icon: <Icon name="github" className="w-6 md:w-7" />,
       href: "https://github.com/mahdineer",
     },
     {
       title: "Linkedin",
-      icon: <Icon name="linkedin" className="h-6 md:h-7" />,
+      icon: <Icon name="linkedin" className="w-6 md:w-7" />,
       href: "https://www.linkedin.com/in/mahdi-rostamzadeh/",
     },
     {
       title: "Unsplash",
-      icon: <Icon name="camera" className="h-6 md:h-7" />,
+      icon: <Icon name="camera" className="w-6 md:w-7" />,
       href: "https://unsplash.com/@mahdineer",
+    },
+    {
+      title: "Codepen",
+      icon: <Icon name="codepen" className="w-6 md:w-7" />,
+      href: "https://codepen.io/mahdineer",
     },
   ];
 
