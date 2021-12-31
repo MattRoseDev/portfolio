@@ -18,6 +18,7 @@
       "@t/*": ["src/@types/*"],
       "@components/*": ["src/components/*"],
       "@features/*": ["src/features/*"],
+      "@stories/*": ["src/stories/*"],
       "@styles/*": ["src/styles/*"]
     },
     "incremental": true
