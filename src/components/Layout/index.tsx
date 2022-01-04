@@ -1,13 +1,13 @@
 import { LayoutProps } from "./@types";
 import styles from "./Layout.module.css";
-import { Navigation } from "@components/Navigation";
+import { Header } from "@components/Header";
 
 export function Layout(props: LayoutProps) {
   const { children } = props;
 
   return (
     <div className={styles.wrapper}>
-      <Navigation />
+      <Header />
       {children}
     </div>
   );
