@@ -12,7 +12,7 @@ export function SocialList() {
     {
       title: "Linkedin",
       icon: <Icon name="linkedin" className="w-6 md:w-7" />,
-      href: "https://www.linkedin.com/in/mahdi-rostamzadeh/",
+      href: "https://www.linkedin.com/in/mahdineer/",
     },
     {
       title: "Unsplash",
