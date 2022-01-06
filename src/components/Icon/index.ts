@@ -2,6 +2,8 @@ import { createElement, SVGAttributes } from "react";
 
 import CameraFill from "./svg/camera-fill.svg";
 import Camera from "./svg/camera.svg";
+import ChevronRightFill from "./svg/chevron-right-fill.svg";
+import ChevronRight from "./svg/chevron-right.svg";
 import Codepen from "./svg/codepen.svg";
 import GithubFill from "./svg/github-fill.svg";
 import Github from "./svg/github.svg";
@@ -24,6 +26,10 @@ export const iconsList = {
   codepen: {
     outline: Codepen,
     fill: Codepen,
+  },
+  chevronRight: {
+    outline: ChevronRight,
+    fill: ChevronRightFill,
   },
 };
 
