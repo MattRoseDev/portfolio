@@ -1,5 +1,7 @@
 .contact {
-  @apply mx-auto py-44 md:w-[35rem] text-base md:text-lg text-center;
+  @apply items-center min-h-[35rem];
+  @apply mx-auto md:w-[40rem] text-base md:text-lg text-center;
+
   & .title {
     @apply font-bold text-center text-4xl md:text-5xl mb-14;
   }
