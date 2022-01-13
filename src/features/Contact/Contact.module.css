@@ -1,6 +1,7 @@
 .contact {
-  @apply items-center min-h-[35rem];
-  @apply mx-auto md:w-[40rem] text-base md:text-lg text-center;
+  @apply items-center mt-12 md:mt-0;
+  @apply mx-auto md:w-[40rem] min-h-[30rem] md:min-h-[35rem];
+  @apply text-base md:text-lg text-center;
 
   & .title {
     @apply font-bold text-center text-4xl md:text-5xl mb-14;
