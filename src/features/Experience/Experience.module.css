@@ -1,5 +1,5 @@
 .wrapper {
-  @apply md:py-28 md:pl-72 min-h-[35rem] md:min-h-screen;
+  @apply py-16 md:py-28 md:pl-72 min-h-[35rem] md:min-h-screen;
 
   & .tabGroup {
     @apply flex flex-col md:flex-row;
@@ -10,7 +10,7 @@
 
       & .tab {
         @apply w-full md:w-fit text-left whitespace-nowrap;
-        @apply mr-3 my-2 py-1 px-2 text-sm font-mono text-gray-400;
+        @apply mr-3 mb-6 py-1 px-2 text-sm font-mono text-gray-400;
 
         &.selected {
           @apply bg-yellow-400 font-bold text-gray-900 rounded-full;
@@ -22,24 +22,40 @@
       @apply flex flex-col;
       @apply md:ml-8 mt-2;
 
-      & .role {
-        @apply font-bold text-lg;
-      }
-      & .date {
-        @apply text-sm font-mono text-gray-400 leading-7;
-      }
-      & .descriptions {
-        @apply mt-5;
-        & div {
-          @apply pb-2.5 text-gray-400;
-          @apply before:content-["-"] before:pr-2 before:text-yellow-400;
+      & .head {
+        @apply flex flex-col items-start space-y-3;
+        & .role {
+          @apply flex flex-wrap items-center font-bold text-xl;
+        }
+
+        & .status {
+          @apply inline-flex border text-xs rounded-full;
+          @apply text-gray-400 px-1.5 leading-5;
+        }
+
+        & .date {
+          @apply text-sm font-mono text-gray-400;
         }
       }
 
+      & .descriptions {
+        @apply flex flex-col items-start space-y-2;
+        @apply mt-6 mb-6 md:mb-3;
+        & .description {
+          @apply text-gray-400 leading-8;
+          @apply before:content-["-"] before:pr-2 before:text-yellow-400;
+        }
+      }
       & .techStack {
-        @apply flex flex-wrap border-gray-700 border-t pt-2 mt-2;
-        & div {
-          @apply text-sm pr-3.5 text-yellow-400;
+        @apply flex flex-wrap pt-3;
+
+        & .item,
+        div {
+          @apply text-sm pr-3 text-gray-400 leading-7;
+        }
+
+        & .item {
+          @apply pr-3.5 text-yellow-400;
         }
       }
     }
