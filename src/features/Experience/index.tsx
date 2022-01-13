@@ -8,7 +8,8 @@ export function Experience() {
   const jobs: Job[] = [
     {
       company: "PRAGMIDEA LTD",
-      role: "Full Stack Developer(Full-Time | Remote)",
+      role: "Full Stack Developer",
+      status: "Full-Time | Remote",
       date: "Sep 2020 – present",
       descriptions: [
         "Worked on several different projects about cryptocurrency.",
@@ -27,7 +28,8 @@ export function Experience() {
     },
     {
       company: "Weesh",
-      role: "Full Stack Developer(Personal Project)",
+      role: "Full Stack Developer",
+      status: "Personal Project",
       date: "Jan 2020 – Jan 2021",
       descriptions: [
         "Worked on a social network like Twitter.",
@@ -44,7 +46,8 @@ export function Experience() {
     },
     {
       company: "Infosaba",
-      role: "Full Stack Developer(Full-Time)",
+      role: "Full Stack Developer",
+      status: "Full-Time",
       date: "Jun 2018 – Jan 2021",
       descriptions: [
         "An Industrial network with deep data.",
@@ -62,7 +65,8 @@ export function Experience() {
     },
     {
       company: "Tabaneh Shahr",
-      role: "Frontend Developer(Full-Time)",
+      role: "Frontend Developer",
+      status: "Full-Time",
       date: "Nov 2017 – Nov 2018",
       descriptions: [
         "The application was a social network for artists.",
@@ -101,24 +105,39 @@ export function Experience() {
             ))}
           </Tab.List>
           <Tab.Panels>
-            {jobs.map(({ company, role, date, descriptions, techStack }) => (
-              <Tab.Panel key={`${company}-${role}`} className={styles.tabPanel}>
-                <div className={styles.role}>{role}</div>
-                <small className={styles.date}>{date}</small>
-                <div className={styles.descriptions}>
-                  {descriptions.map(description => (
-                    <div key={description[0] + description[1]}>
-                      {description}
-                    </div>
-                  ))}
-                </div>
-                <div className={styles.techStack}>
-                  {techStack.map(t => (
-                    <div key={t[0] + t[1]}>{t}</div>
-                  ))}
-                </div>
-              </Tab.Panel>
-            ))}
+            {jobs.map(
+              ({ company, role, status, date, descriptions, techStack }) => (
+                <Tab.Panel
+                  key={`${company}-${role}`}
+                  className={styles.tabPanel}
+                >
+                  <div className={styles.head}>
+                    <div className={styles.role}>{role}</div>
+                    {status && <div className={styles.status}>{status}</div>}
+                    <small className={styles.date}>{date}</small>
+                  </div>
+
+                  <div className={styles.descriptions}>
+                    {descriptions.map(description => (
+                      <div
+                        key={description[0] + description[1]}
+                        className={styles.description}
+                      >
+                        {description}
+                      </div>
+                    ))}
+                  </div>
+                  <div className={styles.techStack}>
+                    <div>Tech Stack: </div>
+                    {techStack.map(t => (
+                      <div key={t[0] + t[1]} className={styles.item}>
+                        {t}
+                      </div>
+                    ))}
+                  </div>
+                </Tab.Panel>
+              ),
+            )}
           </Tab.Panels>
         </div>
       </Tab.Group>
