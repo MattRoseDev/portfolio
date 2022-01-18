@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import styles from "../Buttons.module.css";
-import { LinkButtonProps } from "./@types";
+import type { LinkButtonProps } from "./@types";
 
 export function LinkButton(props: LinkButtonProps) {
   const { className, children, href } = props;
