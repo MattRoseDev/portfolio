@@ -1,9 +1,9 @@
 .logo {
   @apply inline-flex items-center justify-center;
-  @apply text-yellow-400 border-yellow-400 md:border rounded;
-  @apply pr-3 pl-1 h-10 text-sm font-bold font-mono;
+  @apply text-yellow-400;
+  @apply pr-3 pl-1 h-10 text-lg font-bold font-mono;
 
   & svg {
-    @apply w-6;
+    @apply w-7;
   }
 }
