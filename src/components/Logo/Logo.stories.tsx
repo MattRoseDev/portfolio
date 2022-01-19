@@ -9,9 +9,9 @@ export default {
   component: Logo,
 } as ComponentMeta<typeof Logo>;
 
-const Template: ComponentStory<typeof Logo> = args => (
+const Template: ComponentStory<typeof Logo> = () => (
   <StoryContainer>
-    <Logo {...args} width="50" height="50" />
+    <Logo {...args} />
   </StoryContainer>
 );
 
