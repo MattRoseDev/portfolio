@@ -11,7 +11,7 @@ export default {
 
 const Template: ComponentStory<typeof Logo> = () => (
   <StoryContainer>
-    <Logo {...args} />
+    <Logo />
   </StoryContainer>
 );
 

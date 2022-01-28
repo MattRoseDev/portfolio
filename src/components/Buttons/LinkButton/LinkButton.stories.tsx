@@ -9,7 +9,7 @@ export default {
   component: LinkButton,
 } as ComponentMeta<typeof LinkButton>;
 
-const Template: ComponentStory<typeof Icon> = args => (
+const Template: ComponentStory<typeof LinkButton> = args => (
   <StoryContainer>
     <LinkButton {...args} />
   </StoryContainer>
