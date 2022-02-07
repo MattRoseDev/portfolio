@@ -8,7 +8,7 @@
 }
 
 .smallHeading {
-  @apply text-xl md:text-2xl text-yellow-400;
+  @apply text-xl md:text-2xl text-primary-400;
   @apply font-mono my-2;
 }
 

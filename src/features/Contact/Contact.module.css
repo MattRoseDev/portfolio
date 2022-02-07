@@ -9,6 +9,6 @@
 
   & .email {
     @apply py-2 px-5 mt-10 rounded-full font-medium;
-    @apply bg-yellow-400 text-gray-900;
+    @apply bg-primary-400 text-gray-900;
   }
 }

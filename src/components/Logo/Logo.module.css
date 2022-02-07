@@ -1,6 +1,6 @@
 .logo {
   @apply inline-flex items-center justify-center;
-  @apply text-yellow-400;
+  @apply text-primary-400;
   @apply pr-3 pl-1 h-10 text-lg font-bold font-mono;
 
   & svg {

@@ -13,7 +13,7 @@
         @apply mr-3 mb-6 py-1 px-2 text-sm font-mono text-gray-400;
 
         &.selected {
-          @apply bg-yellow-400 font-bold text-gray-900 rounded-full;
+          @apply bg-primary-400 font-bold text-gray-900 rounded-full;
         }
       }
     }
@@ -43,7 +43,7 @@
         @apply mt-6 mb-6 md:mb-3;
         & .description {
           @apply text-gray-400 leading-8;
-          @apply before:content-["-"] before:pr-2 before:text-yellow-400;
+          @apply before:content-["-"] before:pr-2 before:text-primary-400;
         }
       }
       & .techStack {
@@ -55,7 +55,7 @@
         }
 
         & .item {
-          @apply pr-3.5 text-yellow-400;
+          @apply pr-3.5 text-primary-400;
         }
       }
     }

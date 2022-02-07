@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof LinkButton> = args => (
 
 export const Main = Template.bind({});
 Main.args = {
-  className: "bg-yellow-400 rounded-full py-1.5 px-3",
+  className: "bg-primary-400 rounded-full py-1.5 px-3",
   children: "Say hello",
   href: "#",
 };
