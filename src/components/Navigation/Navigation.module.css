@@ -5,6 +5,6 @@
 
 .navItem {
   @apply py-2 px-4 md:py-3 font-medium;
-  @apply text-gray-300 hover:text-yellow-400;
+  @apply text-gray-300 hover:text-primary-400;
   @apply transition-all duration-200;
 }
