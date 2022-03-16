@@ -1,8 +1,8 @@
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
-import { Job } from "./@types";
 import styles from "./Experience.module.css";
 import { Section, Title } from "@components/Section";
+import type { Job } from "./@types";
 
 export function Experience() {
   const jobs: Job[] = [
@@ -74,13 +74,6 @@ export function Experience() {
         "Achieved better performance by optimizing the structure of the database.",
       ],
       techStack: ["React", "Redux", "Webpack", "Firebase", "Bootstrap"],
-    },
-    {
-      company: "Freelance",
-      role: "Frontend Developer",
-      date: "Nov 2016 – Nov 2017",
-      descriptions: ["Developed a simple online store and personal websites"],
-      techStack: ["React", "Redux"],
     },
   ];
 
