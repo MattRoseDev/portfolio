@@ -6,6 +6,8 @@ export type TitleProps = {
 
 export interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
+  arrowClassName?: string;
+  arrowImageURL?: string;
 }
 
 export interface DescriptionProps extends HTMLAttributes<HTMLParagraphElement> {

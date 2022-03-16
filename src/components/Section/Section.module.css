@@ -1,21 +1,25 @@
 .section {
   @apply flex flex-col justify-start;
-  @apply pt-8 md:pt-24 text-white w-full;
-}
+  @apply pt-20 md:pt-36 text-white w-full;
 
-.title {
-  @apply flex font-bold text-3xl mt-2 mb-8 text-gray-200;
+  & .title {
+    @apply flex font-bold text-3xl mt-2 mb-8 text-gray-200;
 
-  & span {
-    @apply whitespace-nowrap;
+    & span {
+      @apply whitespace-nowrap;
+    }
+
+    &::after {
+      @apply w-80 h-px content-[""] ml-5 my-auto;
+      @apply bg-gray-700;
+    }
   }
 
-  &::after {
-    @apply w-80 h-px content-[""] ml-5 my-auto;
-    @apply bg-gray-700;
+  & .description {
+    @apply text-gray-400;
   }
-}
 
-.description {
-  @apply text-gray-400;
+  & .arrow {
+    @apply opacity-20 mt-24 md:mt-44;
+  }
 }
