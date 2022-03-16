@@ -78,7 +78,12 @@ export function Experience() {
   ];
 
   return (
-    <Section id="experience" className={styles.wrapper}>
+    <Section
+      id="experience"
+      className={styles.wrapper}
+      arrowImageURL="/images/rotated-top-right-arrow-with-broken-line.png"
+      arrowClassName={styles.arrow}
+    >
       <Title>Where I&apos;ve worked</Title>
 
       <Tab.Group>
