@@ -1,5 +1,5 @@
 .wrapper {
-  @apply py-16 md:py-28 md:pl-72 min-h-[35rem] md:min-h-screen;
+  @apply py-16 md:py-28 md:pl-72;
 
   & .tabGroup {
     @apply flex flex-col md:flex-row;
@@ -63,5 +63,9 @@
 
   & .experience {
     @apply flex flex-col;
+  }
+
+  & .arrow {
+    @apply mx-auto md:ml-52 w-24 md:w-44 mt-52 rotate-[100deg];
   }
 }

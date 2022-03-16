@@ -1,8 +1,13 @@
 import styles from "./Hero.module.css";
+import { Section } from "@components/Section";
 
 export function Hero() {
   return (
-    <section className={styles.hero}>
+    <Section
+      className={styles.hero}
+      arrowImageURL="/images/curved-arrow-with-broken-line.png"
+      arrowClassName={styles.arrow}
+    >
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
         <span>Hi, </span>
         <span>I&apos;m Mahdi.</span>
@@ -14,6 +19,6 @@ export function Hero() {
         <br />
         <div>Specializes in React, Node.js and Golang</div>
       </p>
-    </section>
+    </Section>
   );
 }

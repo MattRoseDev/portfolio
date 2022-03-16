@@ -1,22 +1,26 @@
 .hero {
   @apply flex flex-col items-center justify-start;
-  @apply mx-auto md:mx-44 mt-20 md:mt-28 text-white min-h-[35rem] md:min-h-screen;
-}
+  @apply mx-auto max-w-[50rem] text-white;
 
-.bigHeading {
-  @apply font-extrabold text-5xl md:text-7xl text-gray-50 mb-3 md:mb-5;
-}
+  & .bigHeading {
+    @apply font-extrabold text-5xl md:text-7xl text-gray-50 mb-3 md:mb-5;
+  }
 
-.smallHeading {
-  @apply text-center text-2xl text-primary-400;
-  @apply font-mono font-bold my-2;
-}
+  & .smallHeading {
+    @apply text-center text-2xl text-primary-400;
+    @apply font-mono font-bold my-2;
+  }
 
-.description {
-  @apply text-lg md:text-xl text-center text-gray-100 md:w-4/6 mt-3 md:mt-5;
+  & .description {
+    @apply text-lg md:text-xl text-center text-gray-100 md:w-4/6 mt-3 md:mt-5;
 
-  & div {
-    @apply text-gray-400 text-base mt-6;
-    @apply border border-gray-400 rounded-md inline-block py-0.5 px-1.5;
+    & div {
+      @apply text-gray-400 text-base mt-6;
+      @apply border border-gray-400 rounded-md inline-block py-0.5 px-1.5;
+    }
+  }
+
+  & .arrow {
+    @apply w-28 md:w-60 rotate-[55deg];
   }
 }
