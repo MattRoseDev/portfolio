@@ -3,4 +3,7 @@ export enum PageUrls {
   ABOUT = "/#about",
   EXPERIENCE = "/#experience",
   CONTACT = "/#contact",
+  PROJECTS = "/#projects",
+  CURRENTLY = "/#currently",
+  PHOTOS = "/#photos",
 }
