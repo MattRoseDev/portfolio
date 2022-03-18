@@ -11,6 +11,14 @@ export const navigationItems: NavigationItem[] = [
     href: PageUrls.EXPERIENCE,
   },
   {
+    title: "Projects",
+    href: PageUrls.PROJECTS,
+  },
+  {
+    title: "Photos",
+    href: PageUrls.PHOTOS,
+  },
+  {
     title: "Contact",
     href: PageUrls.CONTACT,
   },

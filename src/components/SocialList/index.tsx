@@ -6,22 +6,22 @@ export function SocialList() {
   const socialList = [
     {
       title: "Github",
-      icon: <Icon name="github" className="w-7" />,
+      icon: <Icon name="github" className="w-6" />,
       href: "https://github.com/mahdineer",
     },
     {
       title: "Linkedin",
-      icon: <Icon name="linkedin" className="w-7" />,
-      href: "https://www.linkedin.com/in/mahdineer/",
+      icon: <Icon name="linkedin" className="w-6" />,
+      href: "https://www.linkedin.com/in/mahdineer",
     },
     {
       title: "Unsplash",
-      icon: <Icon name="camera" className="w-7" />,
+      icon: <Icon name="camera" className="w-6" />,
       href: "https://unsplash.com/@mahdineer",
     },
     {
       title: "Codepen",
-      icon: <Icon name="codepen" className="w-7" />,
+      icon: <Icon name="codepen" className="w-6" />,
       href: "https://codepen.io/mahdineer",
     },
   ];
