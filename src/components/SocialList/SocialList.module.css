@@ -1,21 +1,10 @@
 .socialList {
-  @apply flex md:flex-col justify-center text-gray-300;
-  @apply md:fixed md:bottom-0 md:left-10 mt-10;
-}
-
-.socialList::after {
-  @apply hidden md:block w-px h-24 content-[""] mt-5 mx-auto;
-  @apply bg-gray-300;
+  @apply flex justify-center text-gray-300 space-x-1;
 }
 
 .socialItem {
   @apply flex items-center justify-center;
-  @apply mx-3 md:mx-0 md:mb-1 cursor-pointer relative;
-  @apply w-11 h-11 md:w-12 md:h-12;
-  @apply hover:text-primary-400;
-  @apply transition-all duration-200;
-}
-
-.socialItem:hover svg {
-  @apply md:mb-2 transition-all duration-200 absolute;
+  @apply cursor-pointer relative p-2;
+  @apply hover:text-white;
+  @apply transition-all duration-300;
 }

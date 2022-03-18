@@ -1,14 +1,14 @@
 .hero {
   @apply flex flex-col items-center justify-start;
-  @apply mx-auto max-w-[50rem] text-white;
+  @apply mx-auto max-w-[50rem] text-white mt-20;
 
   & .bigHeading {
     @apply font-extrabold text-5xl md:text-7xl text-gray-50 mb-3 md:mb-5;
   }
 
   & .smallHeading {
-    @apply text-center text-2xl text-primary-400;
-    @apply font-mono font-bold my-2;
+    @apply text-center text-2xl text-primary-300;
+    @apply font-mono my-2;
   }
 
   & .description {
