@@ -1,5 +1,5 @@
 .wrapper {
-  @apply fixed top-8 left-0 right-0 h-40;
+  @apply fixed top-8 left-0 right-0 h-[18vh] z-50;
   background-image: linear-gradient(to top, transparent 10%, #0f172a 90%);
 
   &:before {
@@ -8,6 +8,6 @@
   }
 
   & .header {
-    @apply mx-auto flex justify-between items-start container;
+    @apply mx-auto flex justify-between items-start max-w-7xl;
   }
 }

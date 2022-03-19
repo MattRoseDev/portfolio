@@ -14,12 +14,7 @@ export function About() {
   ];
 
   return (
-    <Section
-      id="about"
-      className={styles.about}
-      arrowImageURL="/images/rotated-bottom-right-arrow-with-broken-line.png"
-      arrowClassName={styles.arrow}
-    >
+    <Section id="about" className={styles.about}>
       <Title>About Me</Title>
       <Description className={styles.description}>
         Hello, I&apos;m Mahdi. I love creating and learning new things. I have

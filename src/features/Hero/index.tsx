@@ -3,11 +3,7 @@ import { Section } from "@components/Section";
 
 export function Hero() {
   return (
-    <Section
-      className={styles.hero}
-      arrowImageURL="/images/curved-arrow-with-broken-line.png"
-      arrowClassName={styles.arrow}
-    >
+    <Section className={styles.hero}>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
         <span>Hi, </span>
         <span>I&apos;m Mahdi.</span>
