@@ -1,7 +1,7 @@
 import styles from "./Contact.module.css";
 import { LinkButton } from "@components/Buttons/LinkButton";
 import { Section, Description } from "@components/Section";
-import { email } from "src/config";
+import { EMAIL } from "src/constants";
 
 export function Contact() {
   return (
@@ -12,7 +12,7 @@ export function Contact() {
         always open. Whether you have a question or just want to say hi,
         I&apos;ll try my best to get back to you!
       </Description>
-      <LinkButton className={styles.email} href={email}>
+      <LinkButton className={styles.email} href={EMAIL}>
         Say Hello
       </LinkButton>
     </Section>

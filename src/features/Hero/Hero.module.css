@@ -19,8 +19,4 @@
       @apply border border-gray-400 rounded-md inline-block py-0.5 px-1.5;
     }
   }
-
-  & .arrow {
-    @apply w-28 md:w-60 rotate-[55deg];
-  }
 }

@@ -64,8 +64,4 @@
   & .experience {
     @apply flex flex-col;
   }
-
-  & .arrow {
-    @apply mx-auto md:ml-52 w-24 md:w-44 mt-52 rotate-[100deg];
-  }
 }
