@@ -5,6 +5,8 @@ import Camera from "./svg/camera.svg";
 import ChevronRightFill from "./svg/chevron-right-fill.svg";
 import ChevronRight from "./svg/chevron-right.svg";
 import Codepen from "./svg/codepen.svg";
+import ExternalLinkFill from "./svg/external-link-fill.svg";
+import ExternalLink from "./svg/external-link.svg";
 import GithubFill from "./svg/github-fill.svg";
 import Github from "./svg/github.svg";
 import LinkedinFill from "./svg/linkedin-fill.svg";
@@ -15,6 +17,18 @@ export const iconsList = {
     outline: Camera,
     fill: CameraFill,
   },
+  chevronRight: {
+    outline: ChevronRight,
+    fill: ChevronRightFill,
+  },
+  codepen: {
+    outline: Codepen,
+    fill: Codepen,
+  },
+  externalLink: {
+    outline: ExternalLink,
+    fill: ExternalLinkFill,
+  },
   github: {
     outline: Github,
     fill: GithubFill,
@@ -22,14 +36,6 @@ export const iconsList = {
   linkedin: {
     outline: Linkedin,
     fill: LinkedinFill,
-  },
-  codepen: {
-    outline: Codepen,
-    fill: Codepen,
-  },
-  chevronRight: {
-    outline: ChevronRight,
-    fill: ChevronRightFill,
   },
 };
 
