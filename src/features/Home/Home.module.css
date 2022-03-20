@@ -1,4 +1,4 @@
 .wrapper {
   @apply flex flex-col items-center justify-start mx-auto;
-  @apply p-5 md:p-8 text-white;
+  @apply text-white;
 }
