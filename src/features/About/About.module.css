@@ -1,5 +1,5 @@
 .about {
-  @apply md:pl-44;
+  @apply max-w-6xl flex;
 
   & .description {
     @apply md:text-lg text-gray-300 md:w-4/6 mt-3 md:mt-4 leading-7;
@@ -17,7 +17,7 @@
     }
   }
 
-  & .arrow {
-    @apply ml-28 md:ml-0 w-24 md:w-44 rotate-[65deg];
+  & .icon {
+    @apply w-14 h-14 m-5 filter brightness-[100] opacity-10;
   }
 }

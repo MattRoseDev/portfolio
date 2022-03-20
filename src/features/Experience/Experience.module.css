@@ -1,5 +1,5 @@
 .wrapper {
-  @apply py-16 md:py-28 md:pl-72;
+  @apply w-full max-w-5xl;
 
   & .tabGroup {
     @apply flex flex-col md:flex-row;
@@ -20,7 +20,7 @@
 
     & .tabPanel {
       @apply flex flex-col;
-      @apply md:ml-8 mt-2;
+      @apply md:ml-8 mt-2 md:mt-0;
 
       & .head {
         @apply flex flex-col items-start space-y-3;
@@ -42,7 +42,7 @@
         @apply flex flex-col items-start space-y-2;
         @apply mt-6 mb-6 md:mb-3;
         & .description {
-          @apply text-gray-400 leading-8;
+          @apply text-gray-400 leading-6;
           @apply before:content-["-"] before:pr-2 before:text-primary-400;
         }
       }

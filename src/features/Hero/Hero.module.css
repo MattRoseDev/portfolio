@@ -1,6 +1,6 @@
 .hero {
-  @apply flex flex-col items-center justify-start;
-  @apply mx-auto max-w-[50rem] text-white mt-20;
+  @apply flex flex-col items-center justify-center;
+  @apply mx-auto h-screen max-w-[50rem] text-white;
 
   & .bigHeading {
     @apply font-extrabold text-5xl md:text-7xl text-gray-50 mb-3 md:mb-5;

@@ -1,8 +1,7 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
-
 import { StoryContainer } from "@stories/StoryContainer";
 import { Icon, iconsList } from ".";
+import type { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
   title: "components/Icon",
@@ -17,7 +16,7 @@ const Template: ComponentStory<typeof Icon> = args => (
 
 export const Main = Template.bind({});
 Main.args = {
-  name: "github",
+  name: "Github",
   className: "text-white",
 };
 
@@ -25,9 +24,5 @@ Main.argTypes = {
   name: {
     options: Object.keys(iconsList),
     control: { type: "select" },
-  },
-  type: {
-    options: ["outline", "fill"],
-    control: { type: "radio" },
   },
 };

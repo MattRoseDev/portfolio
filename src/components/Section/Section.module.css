@@ -1,6 +1,5 @@
 .section {
-  @apply flex flex-col justify-start;
-  @apply pt-20 md:pt-36 text-white w-full;
+  @apply pt-20 md:pt-36 text-white;
 
   & .title {
     @apply font-bold text-5xl mt-5 mb-10 md:mb-16 text-gray-200;
@@ -8,9 +7,5 @@
 
   & .description {
     @apply text-gray-400;
-  }
-
-  & .arrow {
-    @apply opacity-20 mt-24 md:mt-44;
   }
 }
