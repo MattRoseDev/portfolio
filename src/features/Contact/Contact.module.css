@@ -1,7 +1,7 @@
 .contact {
-  @apply items-center mt-12 md:mt-0;
-  @apply mx-auto md:max-w-[40rem];
-  @apply min-h-[30rem] md:min-h-[40rem];
+  @apply flex flex-col justify-center items-center px-5 md:px-0;
+  @apply mx-auto md:max-w-3xl;
+  @apply mb-44 md:mb-52;
   @apply text-base md:text-lg text-center;
 
   & .title {
