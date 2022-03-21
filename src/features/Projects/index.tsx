@@ -13,7 +13,7 @@ export function Projects() {
           <div className={styles.imageWrapper}>
             <div className={styles.layer}></div>
             <img
-              src="/images/gitexpo.png"
+              src="/images/projects/gitexpo.png"
               alt="Gitexpo"
               className={styles.image}
             />

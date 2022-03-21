@@ -14,7 +14,7 @@
 
       & .description {
         @apply text-gray-400 bg-gray-900 md:border border-gray-800;
-        @apply md:rounded-xl md:shadow-lg;
+        @apply md:rounded-xl md:shadow-xl;
         @apply w-11/12 text-sm pb-1 leading-6;
         @apply md:w-[30rem] md:text-base md:py-5 md:px-5;
       }
