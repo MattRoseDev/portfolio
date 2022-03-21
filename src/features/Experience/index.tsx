@@ -1,4 +1,4 @@
-import { Tab } from "@headlessui/react";
+import { Tab, Transition } from "@headlessui/react";
 import classNames from "classnames";
 import styles from "./Experience.module.css";
 import { Section, Title } from "@components/Section";
@@ -17,11 +17,11 @@ export function Experience() {
                 key={`tab-${company}-${role}`}
                 className={({ selected }) =>
                   selected
-                    ? classNames(styles.tab, styles.selected)
-                    : classNames(styles.tab)
+                    ? classNames(styles.tabWrapper, styles.selected)
+                    : classNames(styles.tabWrapper)
                 }
               >
-                {company}
+                <div className={styles.tab}>{company}</div>
               </Tab>
             ))}
           </Tab.List>
@@ -32,30 +32,43 @@ export function Experience() {
                   key={`${company}-${role}`}
                   className={styles.tabPanel}
                 >
-                  <div className={styles.head}>
-                    <div className={styles.role}>{role}</div>
-                    {status && <div className={styles.status}>{status}</div>}
-                    <small className={styles.date}>{date}</small>
-                  </div>
-
-                  <div className={styles.descriptions}>
-                    {descriptions.map(description => (
-                      <div
-                        key={description[0] + description[1]}
-                        className={styles.description}
-                      >
-                        {description}
+                  {({ selected }) => (
+                    <Transition
+                      show={selected}
+                      enter={styles.enterTransition}
+                      enterFrom={styles.enterFromTransition}
+                      enterTo={styles.enterToTransition}
+                      leave={styles.leaveTransition}
+                      leaveFrom={styles.leaveFromTransition}
+                      leaveTo={styles.leaveToTransition}
+                    >
+                      <div className={styles.head}>
+                        <div className={styles.role}>{role}</div>
+                        {status && (
+                          <div className={styles.status}>{status}</div>
+                        )}
+                        <small className={styles.date}>{date}</small>
                       </div>
-                    ))}
-                  </div>
-                  <div className={styles.techStack}>
-                    <div>Tech Stack: </div>
-                    {techStack.map(t => (
-                      <div key={t[0] + t[1]} className={styles.item}>
-                        {t}
+                      <div className={styles.descriptions}>
+                        {descriptions.map(description => (
+                          <div
+                            key={description[0] + description[1]}
+                            className={styles.description}
+                          >
+                            {description}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                      <div className={styles.techStack}>
+                        <div>Tech Stack: </div>
+                        {techStack.map(t => (
+                          <div key={t[0] + t[1]} className={styles.item}>
+                            {t}
+                          </div>
+                        ))}
+                      </div>
+                    </Transition>
+                  )}
                 </Tab.Panel>
               ),
             )}

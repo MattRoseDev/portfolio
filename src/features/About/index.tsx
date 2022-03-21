@@ -1,18 +1,8 @@
 import styles from "./About.module.css";
 import { Section, Title, Description } from "@components/Section";
+import { SKILLS } from "src/constants";
 
 export function About() {
-  const skills = [
-    "React (Next.js)",
-    "Tailwind CSS",
-    "Node.js",
-    "Typescript",
-    "GraphQL (Apollo)",
-    "Postgres",
-    "Golang",
-    "Docker",
-  ];
-
   return (
     <Section id="about" className={styles.about}>
       <div>
@@ -30,7 +20,7 @@ export function About() {
           Here are a few technologies I&apos;ve been working with recently:
         </Description>
         <ul className={styles.skills}>
-          {skills.map(skill => (
+          {SKILLS.map(skill => (
             <li className={styles.skill} key={skill}>
               {skill}
             </li>
