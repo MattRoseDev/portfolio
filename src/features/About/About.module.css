@@ -1,5 +1,5 @@
 .about {
-  @apply max-w-6xl flex;
+  @apply max-w-5xl px-5;
 
   & .description {
     @apply md:text-lg text-gray-300 md:w-4/6 mt-3 md:mt-4 leading-7;

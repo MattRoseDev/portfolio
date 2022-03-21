@@ -1,19 +1,23 @@
 .wrapper {
-  @apply w-full max-w-5xl;
+  @apply w-full max-w-5xl px-5;
 
   & .tabGroup {
     @apply flex flex-col md:flex-row;
 
     & .tabList {
       @apply flex md:flex-col md:items-start;
-      @apply w-full md:w-fit overflow-scroll;
+      @apply w-full md:w-fit overflow-scroll space-x-4 md:space-x-0;
 
-      & .tab {
-        @apply w-full md:w-fit text-left whitespace-nowrap;
-        @apply mr-3 mb-6 py-1 px-2 text-sm font-mono text-gray-400;
+      & .tabWrapper {
+        @apply w-full text-left whitespace-nowrap py-1.5;
 
-        &.selected {
+        & .tab {
+          @apply py-1 px-2 text-[13px] font-mono text-gray-400 w-fit;
+        }
+
+        &.selected .tab {
           @apply bg-primary-400 font-bold text-gray-900 rounded-full;
+          @apply transition-all duration-500;
         }
       }
     }
@@ -24,6 +28,7 @@
 
       & .head {
         @apply flex flex-col items-start space-y-3;
+
         & .role {
           @apply flex flex-wrap items-center font-bold text-xl;
         }
@@ -46,6 +51,7 @@
           @apply before:content-["-"] before:pr-2 before:text-primary-400;
         }
       }
+
       & .techStack {
         @apply flex flex-wrap pt-3;
 
@@ -58,10 +64,25 @@
           @apply pr-3.5 text-primary-400;
         }
       }
-    }
-  }
 
-  & .experience {
-    @apply flex flex-col;
+      & .enterTransition {
+        @apply transition-opacity duration-500;
+      }
+      & .enterFromTransition {
+        @apply opacity-0;
+      }
+      & .enterToTransition {
+        @apply opacity-100;
+      }
+      & .leaveTransition {
+        @apply transition-opacity duration-500;
+      }
+      & .leaveFromTransition {
+        @apply opacity-100;
+      }
+      & .leaveToTransition {
+        @apply opacity-0;
+      }
+    }
   }
 }
