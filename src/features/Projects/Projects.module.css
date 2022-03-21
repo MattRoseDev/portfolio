@@ -1,5 +1,5 @@
 .projects {
-  @apply max-w-5xl;
+  @apply max-w-5xl px-5;
 
   & .project {
     @apply flex flex-col md:flex-row justify-end w-full relative;

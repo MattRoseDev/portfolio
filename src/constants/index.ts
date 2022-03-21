@@ -3,6 +3,17 @@ import type { Project } from "@t/project";
 
 export const EMAIL = "mailto:mahdineer@pm.me";
 
+export const SKILLS: string[] = [
+  "React (Next.js)",
+  "Tailwind CSS",
+  "Node.js",
+  "Typescript",
+  "GraphQL (Apollo)",
+  "Postgres",
+  "Golang",
+  "Docker",
+];
+
 export const PROJECTS: Project[] = [
   {
     title: "Github Explorer",
