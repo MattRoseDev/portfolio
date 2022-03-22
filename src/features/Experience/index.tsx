@@ -38,9 +38,6 @@ export function Experience() {
                       enter={styles.enterTransition}
                       enterFrom={styles.enterFromTransition}
                       enterTo={styles.enterToTransition}
-                      leave={styles.leaveTransition}
-                      leaveFrom={styles.leaveFromTransition}
-                      leaveTo={styles.leaveToTransition}
                     >
                       <div className={styles.head}>
                         <div className={styles.role}>{role}</div>

@@ -74,15 +74,6 @@
       & .enterToTransition {
         @apply opacity-100;
       }
-      & .leaveTransition {
-        @apply transition-opacity duration-500;
-      }
-      & .leaveFromTransition {
-        @apply opacity-100;
-      }
-      & .leaveToTransition {
-        @apply opacity-0;
-      }
     }
   }
 }
