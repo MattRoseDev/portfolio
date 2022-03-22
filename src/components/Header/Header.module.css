@@ -1,9 +1,9 @@
 .wrapper {
   @apply fixed top-8 left-0 right-0 h-[18vh] z-50;
-  background-image: linear-gradient(to top, transparent 10%, #0f172a 90%);
+  background-image: linear-gradient(to top, transparent 10%, #000 90%);
 
   &:before {
-    @apply fixed bg-gray-900 top-0 left-0 right-0;
+    @apply fixed bg-black top-0 left-0 right-0;
     @apply h-10 content-[""];
   }
 

@@ -6,7 +6,7 @@
 @layer base {
   html,
   body {
-    @apply bg-gray-900 p-0 m-0 scroll-smooth;
+    @apply bg-black p-0 m-0 scroll-smooth;
     font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
