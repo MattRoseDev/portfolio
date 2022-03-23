@@ -8,15 +8,11 @@ export function Projects() {
   return (
     <Section id="projects" className={styles.projects}>
       <Title>Projects</Title>
-      {PROJECTS.map(({ title, description, tags, links }) => (
+      {PROJECTS.map(({ title, description, tags, links, image }) => (
         <div key={`projects-${title}`} className={styles.project}>
           <div className={styles.imageWrapper}>
             <div className={styles.layer}></div>
-            <img
-              src="/images/projects/gitexpo.png"
-              alt="Gitexpo"
-              className={styles.image}
-            />
+            <img src={image} alt={title} className={styles.image} />
           </div>
           <div className={styles.content}>
             <h3 className={styles.title}>{title}</h3>
