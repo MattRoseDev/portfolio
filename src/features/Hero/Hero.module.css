@@ -3,7 +3,7 @@
   @apply mx-auto min-h-screen max-w-[50rem] text-white px-5;
 
   & .avatar {
-    @apply bg-[url('/images/avatars/mahdi.jpg')] bg-cover grayscale;
+    @apply bg-cover grayscale overflow-hidden;
     @apply w-64 h-64 rounded-full mt-12 lg:mt-0 mb-12 border border-gray-900 shadow;
   }
 
