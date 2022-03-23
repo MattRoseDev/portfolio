@@ -20,6 +20,7 @@ export const PROJECTS: Project[] = [
     description:
       "This is a better Github Explorer of the Trending repositories. The project will use the Github Graphql API for searching and filtering interesting projects.",
     tags: ["React", "Github API", "GraphQL", "Heroku"],
+    image: "/images/projects/gitexpo.png",
     links: [
       {
         icon: "Github",
@@ -28,6 +29,22 @@ export const PROJECTS: Project[] = [
       {
         icon: "ExternalLink",
         href: "https://gitexpo.netlify.app/",
+      },
+    ],
+  },
+  {
+    title: "Weesh",
+    description: "A social network sepecially designed for wishes and dreams.",
+    tags: ["React", "Styled-Component", "GraphQL", "Heroku"],
+    image: "/images/projects/weesh.png",
+    links: [
+      {
+        icon: "Github",
+        href: "https://github.com/mahdineer/weesh-skin",
+      },
+      {
+        icon: "ExternalLink",
+        href: "https://weeshme.netlify.app/",
       },
     ],
   },
