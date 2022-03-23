@@ -1,10 +1,18 @@
+import Image from "next/image";
 import styles from "./Hero.module.css";
 import { Section } from "@components/Section";
 
 export function Hero() {
   return (
     <Section className={styles.hero}>
-      <div className={styles.avatar}></div>
+      <div className={styles.avatar}>
+        <Image
+          priority
+          src="/images/avatars/mahdi.jpg"
+          width="256"
+          height="256"
+        />
+      </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
         <span>Hi, </span>
         <span>I&apos;m Mahdi.</span>
