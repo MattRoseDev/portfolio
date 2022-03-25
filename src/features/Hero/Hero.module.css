@@ -4,7 +4,7 @@
 
   & .avatar {
     @apply bg-cover grayscale overflow-hidden;
-    @apply w-64 h-64 rounded-full mt-12 lg:mt-0 mb-12 border border-gray-900 shadow;
+    @apply rounded-full mt-12 lg:mt-0 mb-12 border border-gray-900 shadow;
   }
 
   & .bigHeading {

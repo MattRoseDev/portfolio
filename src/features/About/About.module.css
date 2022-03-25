@@ -9,7 +9,7 @@
     @apply flex flex-wrap w-full md:w-[30rem] font-mono mt-3;
 
     & .skill {
-      @apply w-full sm:w-1/2 text-sm pt-2 text-gray-100;
+      @apply w-full sm:w-1/2 pt-4 text-[15px] text-gray-100;
     }
 
     & .skill::before {

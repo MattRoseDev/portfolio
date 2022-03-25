@@ -2,7 +2,7 @@
   @apply max-w-5xl px-5 md:px-0;
 
   & .project {
-    @apply flex flex-col md:flex-row justify-end w-full relative mb-10 md:mb-16;
+    @apply flex flex-col items-end md:flex-row justify-end w-full relative mb-10 md:mb-16;
 
     & .contentWrapper {
       @apply border border-gray-800 bg-gray-900 rounded-xl shadow-lg overflow-hidden;
