@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Inter", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        mono: ["Roboto Mono"],
       },
     },
     colors: {
