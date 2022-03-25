@@ -5,11 +5,11 @@ export const EMAIL = "mailto:mahdineer@pm.me";
 
 export const SKILLS: string[] = [
   "React (Next.js)",
-  "Tailwind CSS",
-  "Node.js",
   "Typescript",
   "GraphQL (Apollo)",
+  "Tailwind CSS",
   "Postgres",
+  "Node.js",
   "Golang",
   "Docker",
 ];
@@ -34,7 +34,8 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Weesh",
-    description: "A social network sepecially designed for wishes and dreams.",
+    description:
+      "A text-based social network specialized in making wishes with unique features like reweesh, in-app credit, combinator themes, and ticket service for support.",
     tags: ["React", "Styled-Component", "GraphQL", "Heroku"],
     image: "/images/projects/weesh.png",
     links: [
@@ -63,24 +64,6 @@ export const JOBS: Job[] = [
       "Developed internal packages with rollup.js (Authentication system).",
     ],
     techStack: ["React", "Redux", "TailwindCSS", "Next.js", "Cypress", "Jest"],
-  },
-  {
-    company: "Weesh",
-    role: "Full Stack Developer",
-    status: "Personal Project",
-    date: "Jan 2020 – Jan 2021",
-    descriptions: [
-      "Worked on a social network like Twitter.",
-      "Designed and Implemented a notification server for all of the actions.",
-    ],
-    techStack: [
-      "React",
-      "Node.js",
-      "Apollo",
-      "GraphQL",
-      "MongoDB",
-      "Styled-Component",
-    ],
   },
   {
     company: "Infosaba",

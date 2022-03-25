@@ -9,8 +9,8 @@ export function Hero() {
         <Image
           priority
           src="/images/avatars/mahdi.jpg"
-          width="256"
-          height="256"
+          width="240"
+          height="240"
         />
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
@@ -19,8 +19,8 @@ export function Hero() {
       </h2>
       <h3 className={styles.smallHeading}>Brings ideas to life with code.</h3>
       <p className={styles.description}>
-        Full Stack Developer with <strong>+5 years</strong> of experience
-        developing complicated applications.
+        Full Stack Developer with <strong>+4 years</strong> of experience
+        developing web applications.
       </p>
     </Section>
   );
