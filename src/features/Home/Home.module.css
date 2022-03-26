@@ -1,4 +1,8 @@
 .wrapper {
   @apply flex flex-col items-center justify-start mx-auto;
   @apply text-white;
+
+  & .socialList {
+    @apply mb-10;
+  }
 }
