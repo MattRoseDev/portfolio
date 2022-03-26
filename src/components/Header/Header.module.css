@@ -1,13 +1,8 @@
 .wrapper {
-  @apply fixed top-8 left-0 right-0 h-[18vh] z-50;
-  background-image: linear-gradient(to top, transparent 10%, #000 90%);
-
-  &:before {
-    @apply fixed bg-black top-0 left-0 right-0;
-    @apply h-10 content-[""];
-  }
+  @apply fixed top-0 left-0 right-0 z-50;
+  @apply backdrop-blur-lg filter bg-[rgba(0,0,0,0.5)];
 
   & .header {
-    @apply mx-auto flex justify-between items-start max-w-7xl;
+    @apply mx-auto flex justify-between items-start md:items-center max-w-7xl px-3;
   }
 }
