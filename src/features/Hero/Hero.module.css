@@ -13,7 +13,7 @@
 
   & .smallHeading {
     @apply text-center text-2xl text-primary-400;
-    @apply font-mono my-2;
+    @apply font-mono my-2 font-bold;
   }
 
   & .description {
