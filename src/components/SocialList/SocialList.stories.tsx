@@ -17,6 +17,5 @@ const Template: ComponentStory<typeof SocialList> = () => (
 
 export const Main = Template.bind({});
 Main.args = {
-  name: "github",
   className: "text-white",
 };
