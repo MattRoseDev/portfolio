@@ -1,7 +1,31 @@
 import type { Job } from "@t/job";
 import type { Project } from "@t/project";
+import type { Social } from "@t/social";
 
 export const EMAIL = "mailto:mahdineer@pm.me";
+
+export const SOCIAL_LIST: Social[] = [
+  {
+    title: "Github",
+    icon: "Github",
+    href: "https://github.com/mahdineer",
+  },
+  {
+    title: "Linkedin",
+    icon: "Linkedin",
+    href: "https://www.linkedin.com/in/mahdineer",
+  },
+  {
+    title: "Unsplash",
+    icon: "Camera",
+    href: "https://unsplash.com/@mahdineer",
+  },
+  {
+    title: "Codepen",
+    icon: "Codepen",
+    href: "https://codepen.io/mahdineer",
+  },
+];
 
 export const SKILLS: string[] = [
   "React (Next.js)",
