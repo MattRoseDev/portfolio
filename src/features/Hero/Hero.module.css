@@ -1,10 +1,10 @@
 .hero {
-  @apply flex flex-col items-center justify-center;
+  @apply flex flex-col items-center justify-start;
   @apply mx-auto min-h-screen max-w-[50rem] text-white px-5;
 
   & .avatar {
     @apply bg-cover grayscale overflow-hidden;
-    @apply rounded-full mt-12 lg:mt-0 mb-12 border border-gray-900 shadow;
+    @apply rounded-full my-12 border border-gray-900 shadow;
   }
 
   & .bigHeading {

@@ -1,5 +1,6 @@
 import { Tab, Transition } from "@headlessui/react";
 import classNames from "classnames";
+import { v4 as uuid } from "uuid";
 import styles from "./Experience.module.css";
 import { Section, Title } from "@components/Section";
 import { JOBS } from "src/constants";
@@ -12,9 +13,9 @@ export function Experience() {
       <Tab.Group>
         <div className={styles.tabGroup}>
           <Tab.List className={styles.tabList}>
-            {JOBS.map(({ company, role }) => (
+            {JOBS.map(({ company }) => (
               <Tab
-                key={`tab-${company}-${role}`}
+                key={uuid()}
                 className={({ selected }) =>
                   selected
                     ? classNames(styles.tabWrapper, styles.selected)
@@ -48,10 +49,7 @@ export function Experience() {
                       </div>
                       <div className={styles.descriptions}>
                         {descriptions.map(description => (
-                          <div
-                            key={description[0] + description[1]}
-                            className={styles.description}
-                          >
+                          <div key={uuid()} className={styles.description}>
                             {description}
                           </div>
                         ))}
@@ -59,7 +57,7 @@ export function Experience() {
                       <div className={styles.techStack}>
                         <div>Tech Stack: </div>
                         {techStack.map(t => (
-                          <div key={t[0] + t[1]} className={styles.item}>
+                          <div key={uuid()} className={styles.item}>
                             {t}
                           </div>
                         ))}

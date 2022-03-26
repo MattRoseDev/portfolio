@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import { Section } from "@components/Section";
+import { SocialList } from "@components/SocialList";
 
 export function Hero() {
   return (
-    <Section className={styles.hero}>
+    <Section id="hero" className={styles.hero}>
       <div className={styles.avatar}>
         <Image
           priority
@@ -22,6 +23,9 @@ export function Hero() {
         Full Stack Developer with <strong>+4 years</strong> of experience
         developing web applications.
       </p>
+      <div className="mt-10">
+        <SocialList />
+      </div>
     </Section>
   );
 }
