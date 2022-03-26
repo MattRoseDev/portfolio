@@ -1,5 +1,5 @@
 .socialList {
-  @apply flex justify-center text-gray-300 space-x-1;
+  @apply flex justify-center text-primary-400 space-x-3;
 }
 
 .socialItem {
