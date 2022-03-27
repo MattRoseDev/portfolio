@@ -9,7 +9,9 @@
       @apply md:absolute md:border-none left-0 z-20 md:shadow-none md:bg-transparent;
 
       & .image {
-        @apply w-full md:hidden;
+        @apply w-full md:hidden filter grayscale-[1] hover:grayscale-0;
+        @apply border border-gray-800 shadow;
+        @apply transition-all duration-500;
       }
 
       & .content {
@@ -58,7 +60,9 @@
       @apply hidden md:block md:w-3/5 relative rounded-xl overflow-hidden border border-gray-900;
 
       & .image {
-        @apply w-full;
+        @apply w-full filter grayscale-[1] hover:grayscale-0;
+        @apply border border-gray-800 shadow;
+        @apply transition-all duration-500;
       }
     }
   }

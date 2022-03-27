@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
 export const JOBS: Job[] = [
   {
     company: "Pragmidea LTD",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer",
     status: "Full-Time | Remote",
     date: "Sep 2020 – present",
     descriptions: [
@@ -92,9 +92,9 @@ export const JOBS: Job[] = [
   },
   {
     company: "Infosaba",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer",
     status: "Full-Time",
-    date: "Jun 2018 – Jan 2021",
+    date: "Nov 2018 – Sep 2020",
     descriptions: [
       "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
       "Achieved better performance by optimizing the structure of the database.",
@@ -104,7 +104,7 @@ export const JOBS: Job[] = [
   },
   {
     company: "Tabaneh Shahr",
-    role: "Frontend Developer",
+    role: "Front-End Developer",
     status: "Full-Time",
     date: "Nov 2017 – Nov 2018",
     descriptions: [

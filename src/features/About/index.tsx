@@ -10,10 +10,10 @@ export function About() {
       <div>
         <Title>About Me</Title>
         <Description className={styles.description}>
-          Hello, I&apos;m Mahdi. I love creating and learning new things. I have
-          some experience maintaining, developing, testing web applications and
-          internal frameworks. Specializes in React and Node.js. Additionally, I
-          am good at solving problems and improving codes.
+          I have some experience maintaining, developing, testing web
+          applications and internal frameworks. Specializes in React and
+          Node.js. Additionally, I am capable of solving problems an improving
+          performance and efficiency.
           <br />
           <br />
           Also, I love playing piano, chess and{" "}
