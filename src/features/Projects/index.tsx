@@ -11,7 +11,6 @@ export function Projects() {
       {PROJECTS.map(({ title, description, tags, links, image }) => (
         <div key={`projects-${title}`} className={styles.project}>
           <div className={styles.imageWrapper}>
-            <div className={styles.layer}></div>
             <img src={image} alt={title} className={styles.image} />
           </div>
           <div className={styles.contentWrapper}>
