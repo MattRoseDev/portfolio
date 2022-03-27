@@ -12,6 +12,7 @@ export function Hero() {
           src="/images/avatars/mahdi.jpg"
           width="240"
           height="240"
+          alt="Mahdi"
         />
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
