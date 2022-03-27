@@ -55,10 +55,7 @@
     }
 
     & .imageWrapper {
-      @apply hidden md:block md:w-3/5 relative rounded-xl overflow-hidden shadow-lg;
-      & .layer {
-        @apply absolute inset-0 bg-primary-300 bg-opacity-30;
-      }
+      @apply hidden md:block md:w-3/5 relative rounded-xl overflow-hidden border border-gray-900;
 
       & .image {
         @apply w-full;
