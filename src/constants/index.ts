@@ -13,7 +13,7 @@ export const SOCIAL_LIST: Social[] = [
   {
     title: "Linkedin",
     icon: "Linkedin",
-    href: "https://www.linkedin.com/in/mahdineer",
+    href: "https://linkedin.com/in/mahdineer",
   },
   {
     title: "Unsplash",
