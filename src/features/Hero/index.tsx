@@ -23,7 +23,7 @@ export function Hero() {
       </h2>
       <h3 className={styles.smallHeading}>Brings ideas to life with code.</h3>
       <p className={styles.description}>
-        Frontend Developer with <strong>+4 years</strong> of experience
+        Full-Stack Developer with <strong>+4 years</strong> of experience
         developing web applications.
       </p>
       <div className="mt-10">
