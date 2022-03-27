@@ -20,4 +20,8 @@
   & .icon {
     @apply w-14 h-14 m-5 filter brightness-[100] opacity-10;
   }
+
+  & .link {
+    @apply cursor-pointer text-primary-400;
+  }
 }
