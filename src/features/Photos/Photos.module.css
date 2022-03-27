@@ -12,7 +12,7 @@
       @apply w-full flex flex-col space-y-5 items-start;
 
       & .image {
-        @apply rounded-xl filter brightness-75 grayscale-[0.3] border border-gray-800 shadow;
+        @apply rounded-xl filter grayscale-[0.1] border border-gray-800 shadow;
       }
     }
   }
