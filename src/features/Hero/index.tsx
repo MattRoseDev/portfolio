@@ -10,9 +10,11 @@ export function Hero() {
         <Image
           priority
           src="/images/avatars/mahdi.jpg"
-          width="240"
-          height="240"
+          width="100%"
+          height="100%"
           alt="Mahdi"
+          layout="responsive"
+          objectFit="cover"
         />
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
