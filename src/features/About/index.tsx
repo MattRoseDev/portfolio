@@ -1,5 +1,7 @@
+import Link from "next/link";
 import styles from "./About.module.css";
 import { Section, Title, Description } from "@components/Section";
+import { PageUrls } from "src/@enums/pages";
 import { SKILLS } from "src/constants";
 
 export function About() {
@@ -9,12 +11,16 @@ export function About() {
         <Title>About Me</Title>
         <Description className={styles.description}>
           Hello, I&apos;m Mahdi. I love creating and learning new things. I have
-          some experience designing, developing, and managing complicated
-          applications and internal frameworks. Additionally, I am good at
-          solving problems, testing and improving codes.
+          some experience maintaining, developing, testing web applications and
+          internal frameworks. Specializes in React and Node.js. Additionally, I
+          am good at solving problems and improving codes.
           <br />
           <br />
-          Also, I love playing piano and chess and photography.
+          Also, I love playing piano, chess and{" "}
+          <Link href={PageUrls.PHOTOS}>
+            <a className={styles.link}>photography</a>
+          </Link>
+          .
           <br />
           <br />
           Here are a few technologies I&apos;ve been working with recently:

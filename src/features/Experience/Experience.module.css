@@ -9,7 +9,7 @@
       @apply w-full md:w-fit overflow-scroll space-x-4 md:space-x-0;
 
       & .tabWrapper {
-        @apply w-full text-left whitespace-nowrap py-1.5 text-gray-400;
+        @apply w-fit md:w-full text-left whitespace-nowrap py-1.5 text-gray-400;
 
         & .tab {
           @apply py-1 px-2 text-[13px] font-mono rounded-md;

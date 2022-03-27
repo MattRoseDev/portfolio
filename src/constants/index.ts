@@ -40,26 +40,9 @@ export const SKILLS: string[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Github Explorer",
-    description:
-      "This is a better Github Explorer of the Trending repositories. The project will use the Github Graphql API for searching and filtering interesting projects.",
-    tags: ["React", "Github API", "GraphQL", "Heroku"],
-    image: "/images/projects/gitexpo.png",
-    links: [
-      {
-        icon: "Github",
-        href: "https://github.com/mahdineer/gitexpo",
-      },
-      {
-        icon: "ExternalLink",
-        href: "https://gitexpo.netlify.app/",
-      },
-    ],
-  },
-  {
     title: "Weesh",
     description:
-      "A text-based social network specialized in making wishes with unique features like reweesh, in-app credit, combinator themes, and ticket service for support.",
+      "Text-based social network specialized in making wishes with unique features like reweesh, in-app credit, combinator themes, and ticket service for support.",
     tags: ["React", "Styled-Component", "GraphQL", "Heroku"],
     image: "/images/projects/weesh.png",
     links: [
@@ -73,31 +56,49 @@ export const PROJECTS: Project[] = [
       },
     ],
   },
+  {
+    title: "Github Explorer",
+    description:
+      "Better Github Explorer of the Trending repositories with multi-select searching and filtering interesting projects.",
+    tags: ["React", "Github API", "GraphQL", "Heroku"],
+    image: "/images/projects/gitexpo.png",
+    links: [
+      {
+        icon: "Github",
+        href: "https://github.com/mahdineer/gitexpo",
+      },
+      {
+        icon: "ExternalLink",
+        href: "https://gitexpo.netlify.app/",
+      },
+    ],
+  },
 ];
 
 export const JOBS: Job[] = [
   {
-    company: "PRAGMIDEA LTD",
-    role: "Full Stack Developer",
+    company: "Pragmidea LTD",
+    role: "Frontend Developer",
     status: "Full-Time | Remote",
     date: "Sep 2020 – present",
     descriptions: [
-      "Worked on several different projects about cryptocurrency.",
-      "Replaced Redux with Context API and SWR on a large scale.",
+      "Developed web applications based on cryptocurrency.",
+      "Replaced Redux with SWR and Context API.",
+      "Collaborated with the technical team (Backend, DevOps, QA).",
       "Gained more experience in writing integration, e2e, and visual tests.",
-      "Developed internal packages with rollup.js (Authentication system).",
+      "Implemented internal packages with rollup.js for the Authentication system.",
     ],
     techStack: ["React", "Redux", "TailwindCSS", "Next.js", "Cypress", "Jest"],
   },
   {
     company: "Infosaba",
-    role: "Full Stack Developer",
+    role: "Frontend Developer",
     status: "Full-Time",
     date: "Jun 2018 – Jan 2021",
     descriptions: [
-      "An Industrial network with deep data.",
-      "Implemented a messenger (direct messages, channels, and groups) for 0.5 million clients.",
+      "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
       "Achieved better performance by optimizing the structure of the database.",
+      "Optimized the network and cached the data intelligently to reduce user downtime.",
     ],
     techStack: ["React", "Redux", "Node.js", "MongoDB", "Websocket", "Apollo"],
   },
@@ -107,9 +108,9 @@ export const JOBS: Job[] = [
     status: "Full-Time",
     date: "Nov 2017 – Nov 2018",
     descriptions: [
-      "The application was a social network for artists.",
-      "Developed an internal package for user polls.",
-      "Achieved better performance by optimizing the structure of the database.",
+      "Implemented a social network for artists.",
+      "Handled notifications with Firebase.",
+      "Developed an internal package for polling users.",
     ],
     techStack: ["React", "Redux", "Webpack", "Firebase", "Bootstrap"],
   },
