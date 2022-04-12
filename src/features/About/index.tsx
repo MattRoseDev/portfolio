@@ -12,7 +12,7 @@ export function About() {
         <Description className={styles.description}>
           I have some experience maintaining, developing, testing web
           applications and internal frameworks. Specializes in React and
-          Node.js. Additionally, I am capable of solving problems an improving
+          Node.js. Additionally, I am capable of solving problems, improving
           performance and efficiency.
           <br />
           <br />
