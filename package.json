@@ -76,6 +76,6 @@
   },
   "lint-staged": {
     "**/*.{ts,js,tsx,jsx,css,json}": "prettier --write --ignore-unknown --ignore-path .prettierignore",
-    "**/*.{ts,js,tsx,jsx,json}": "yarn lint:fix"
+    "**/*.{ts,js,tsx,jsx,json}": "pnpm lint:fix"
   }
 }
