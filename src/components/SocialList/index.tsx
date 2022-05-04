@@ -1,9 +1,9 @@
-import classNames from "classnames";
 import Link from "next/link";
+import classNames from "classnames";
+import type { SocialListProps } from "./@types";
 import styles from "./SocialList.module.css";
 import { Icon } from "src/components/Icon";
 import { SOCIAL_LIST } from "src/constants";
-import type { SocialListProps } from "./@types";
 
 export function SocialList(props: SocialListProps) {
   const { className } = props;

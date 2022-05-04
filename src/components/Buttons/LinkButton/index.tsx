@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import Link from "next/link";
+import classNames from "classnames";
 import styles from "../Buttons.module.css";
 import type { LinkButtonProps } from "./@types";
 

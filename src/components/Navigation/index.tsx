@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import Link from "next/link";
+import classNames from "classnames";
 import { useRef } from "react";
 import { v4 as uuid } from "uuid";
 import styles from "./Navigation.module.css";

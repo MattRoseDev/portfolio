@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "./Projects.module.css";
 import { Icon } from "@components/Icon";
 import { Section, Title } from "@components/Section";
+import styles from "./Projects.module.css";
 import { PROJECTS } from "src/constants";
 
 export function Projects() {

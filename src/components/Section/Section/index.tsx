@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import styles from "../Section.module.css";
 import type { SectionProps } from "../@types";
+import styles from "../Section.module.css";
 
 export function Section(props: SectionProps) {
   const { children, className, ...others } = props;

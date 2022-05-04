@@ -1,6 +1,6 @@
-import styles from "./Header.module.css";
 import { Logo } from "@components/Logo";
 import { Navigation } from "@components/Navigation";
+import styles from "./Header.module.css";
 
 export function Header() {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import styles from "./About.module.css";
 import { Section, Title, Description } from "@components/Section";
+import styles from "./About.module.css";
 import { PageUrls } from "src/@enums/pages";
 import { SKILLS } from "src/constants";
 
