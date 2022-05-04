@@ -1,5 +1,5 @@
-import styles from "./Photos.module.css";
 import { Section, Title } from "@components/Section";
+import styles from "./Photos.module.css";
 
 export function Photos() {
   return (

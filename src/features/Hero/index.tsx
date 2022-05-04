@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./Hero.module.css";
 import { Section } from "@components/Section";
 import { SocialList } from "@components/SocialList";
+import styles from "./Hero.module.css";
 
 export function Hero() {
   return (

@@ -1,38 +1,16 @@
 {
   "root": true,
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest/globals": true,
-    "es2021": true
-  },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "prettier",
-    "react",
-    "@typescript-eslint",
-    "import",
-    "testing-library",
-    "jest-dom",
-    "jest"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
+    "next",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "plugin:testing-library/react",
-    "plugin:jest-dom/recommended",
-    "plugin:jest/recommended"
+    "prettier"
   ],
   "globals": {
     "React": true,
     "JSX": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 2021
   },
   "rules": {
     "no-console": "error",
@@ -45,47 +23,6 @@
       }
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-empty-function": "off",
-    "import/no-unresolved": "error",
-    "import/named": "error",
-    "import/namespace": "error",
-    "import/default": "error",
-    "import/export": "error",
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "unknown",
-          ["internal", "sibling", "parent"],
-          "index",
-          "object",
-          "type"
-        ],
-        "alphabetize": {
-          "order": "asc"
-        }
-      }
-    ]
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      "typescript": { "alwaysTryTypes": true }
-    }
-  },
-
-  "overrides": [
-    {
-      // 3) Now we enable eslint-plugin-testing-library rules or preset only for matching files!
-      "files": [
-        "**/__tests__/**/*.[jt]s?(x)",
-        "**/?(*.)+(spec|test).[jt]s?(x)"
-      ],
-      "extends": ["plugin:testing-library/react"]
-    }
-  ]
+    "@typescript-eslint/no-empty-function": "off"
+  }
 }

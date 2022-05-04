@@ -1,8 +1,8 @@
-import { Tab, Transition } from "@headlessui/react";
 import classNames from "classnames";
 import { v4 as uuid } from "uuid";
-import styles from "./Experience.module.css";
+import { Tab, Transition } from "@headlessui/react";
 import { Section, Title } from "@components/Section";
+import styles from "./Experience.module.css";
 import { JOBS } from "src/constants";
 
 export function Experience() {
