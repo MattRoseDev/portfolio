@@ -1,5 +1,5 @@
 .hero {
-  @apply flex flex-col items-center justify-start;
+  @apply flex flex-col items-center justify-center;
   @apply mx-auto min-h-screen max-w-[50rem] text-white px-5;
 
   & .avatar {

@@ -1,5 +1,5 @@
 .projects {
-  @apply max-w-5xl px-5 md:px-0;
+  @apply max-w-5xl px-5 md:px-0 pt-14 md:pt-20;
 
   & .project {
     @apply flex flex-col items-end md:flex-row justify-end w-full relative mb-10 md:mb-16;
