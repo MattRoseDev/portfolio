@@ -1,5 +1,5 @@
 .photos {
-  @apply max-w-7xl px-5 md:px-0;
+  @apply max-w-7xl px-5 md:px-0 pt-14 md:pt-20;
 
   & .title {
     @apply text-center mb-12 lg:mb-28;

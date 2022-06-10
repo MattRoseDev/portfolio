@@ -1,5 +1,5 @@
 .section {
-  @apply pt-14 md:pt-20 text-white;
+  @apply text-white;
 
   & .title {
     @apply font-bold text-5xl mt-5 mb-10 md:mb-16 text-gray-200;

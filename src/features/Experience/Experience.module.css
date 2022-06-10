@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-full max-w-5xl px-5 md:px-0;
+  @apply w-full max-w-5xl px-5 md:px-0 pt-14 md:pt-20;
 
   & .tabGroup {
     @apply flex flex-col md:flex-row;
