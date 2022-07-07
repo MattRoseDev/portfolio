@@ -1,4 +1,4 @@
-import { NavigationItem } from "@t/navigation";
+import type { NavigationItem } from "@t/navigation";
 import { PageUrls } from "src/@enums/pages";
 
 export const navigationItems: NavigationItem[] = [

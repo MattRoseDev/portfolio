@@ -3,12 +3,3 @@
   @apply select-none duration-300;
   @apply cursor-pointer ring-0 focus:ring-0;
 }
-
-.disabled {
-  @apply bg-gray-300 text-gray-500 !important;
-  @apply cursor-not-allowed;
-}
-
-.loading {
-  @apply cursor-not-allowed;
-}

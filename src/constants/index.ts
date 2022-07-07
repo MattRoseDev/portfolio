@@ -17,7 +17,7 @@ export const SOCIAL_LIST: Social[] = [
   },
   {
     title: "Unsplash",
-    icon: "Camera",
+    icon: "Unsplash",
     href: "https://unsplash.com/@mahdineer",
   },
   {
