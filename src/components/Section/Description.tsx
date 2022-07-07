@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import { DescriptionProps } from "../@types";
-import styles from "../Section.module.css";
+import styles from "./Section.module.css";
+import type { DescriptionProps } from "./Section.types";
 
 export function Description(props: DescriptionProps) {
   const { children, className } = props;

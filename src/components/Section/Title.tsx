@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import { TitleProps } from "../@types";
-import styles from "../Section.module.css";
+import styles from "./Section.module.css";
+import type { TitleProps } from "./Section.types";
 
 export function Title(props: TitleProps) {
   const { children, className } = props;
