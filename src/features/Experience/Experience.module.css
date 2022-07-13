@@ -1,15 +1,15 @@
 .wrapper {
-  @apply w-full max-w-5xl px-5 md:px-0 pt-14 md:pt-20;
+  @apply w-full max-w-5xl px-5 lg:px-0 pt-14 lg:pt-20;
 
   & .tabGroup {
-    @apply flex flex-col md:flex-row;
+    @apply flex flex-col lg:flex-row;
 
     & .tabList {
-      @apply flex md:flex-col md:items-start;
-      @apply w-full md:w-fit overflow-scroll space-x-4 md:space-x-0;
+      @apply flex lg:flex-col lg:items-start;
+      @apply w-full lg:w-fit overflow-scroll space-x-4 lg:space-x-0;
 
       & .tabWrapper {
-        @apply w-fit md:w-full text-left whitespace-nowrap py-1.5 text-gray-400;
+        @apply w-fit lg:w-full text-left whitespace-nowrap py-1.5 text-gray-400;
 
         & .tab {
           @apply py-1 px-2 text-[13px] font-mono rounded-md;
@@ -26,7 +26,7 @@
 
     & .tabPanel {
       @apply flex flex-col;
-      @apply md:ml-8 mt-2 md:mt-0;
+      @apply lg:ml-8 mt-2 lg:mt-0;
 
       & .head {
         @apply flex flex-col items-start space-y-3;
@@ -47,7 +47,7 @@
 
       & .descriptions {
         @apply flex flex-col items-start space-y-2;
-        @apply mt-6 mb-6 md:mb-3;
+        @apply mt-6 mb-6 lg:mb-3;
         & .description {
           @apply text-gray-400 leading-6;
           @apply before:content-["-"] before:pr-2 before:text-primary-400;
