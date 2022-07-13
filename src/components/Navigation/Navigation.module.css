@@ -1,14 +1,14 @@
 .wrapper {
   & .navigation {
-    @apply absolute top-0 right-0 bottom-0 md:relative;
+    @apply absolute top-0 right-0 bottom-0 lg:relative;
     @apply flex flex-col justify-start;
-    @apply md:flex-row md:items-center md:justify-end md:space-x-3;
-    @apply bg-black bg-opacity-90 md:bg-opacity-100 md:bg-transparent border md:border-none border-gray-800;
-    @apply w-0 md:w-fit pt-12 md:py-3 h-screen md:h-auto;
+    @apply lg:flex-row lg:items-center lg:justify-end lg:space-x-3;
+    @apply bg-black bg-opacity-90 lg:bg-opacity-100 lg:bg-transparent border lg:border-none border-gray-800;
+    @apply w-0 lg:w-fit pt-12 lg:py-3 h-screen lg:h-auto;
     @apply transition-all duration-500;
 
     & .item {
-      @apply py-3 px-6 md:px-2.5 font-medium rounded-full;
+      @apply py-3 px-6 lg:px-2.5 font-medium rounded-full;
       @apply text-gray-400 hover:text-white cursor-pointer;
       @apply text-[15px] transition-colors duration-500;
     }
@@ -23,7 +23,7 @@
   }
 
   & .label {
-    @apply block md:hidden cursor-pointer w-20 h-20 max-w-[4.25rem] max-h-[4.25rem] z-50;
+    @apply block lg:hidden cursor-pointer w-20 h-20 max-w-[4.25rem] max-h-[4.25rem] z-50;
     @apply absolute top-0 right-0;
   }
 

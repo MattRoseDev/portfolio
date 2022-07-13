@@ -1,11 +1,11 @@
 .contact {
-  @apply flex flex-col justify-center items-center px-5 md:px-0;
-  @apply mx-auto md:max-w-3xl;
-  @apply mb-44 md:mb-52 pt-14 md:pt-20;
-  @apply text-base md:text-lg text-center;
+  @apply flex flex-col justify-center items-center px-5 lg:px-0;
+  @apply mx-auto lg:max-w-3xl;
+  @apply mb-44 lg:mb-52 pt-14 lg:pt-20;
+  @apply text-base lg:text-lg text-center;
 
   & .title {
-    @apply font-bold text-center text-4xl md:text-5xl mb-14;
+    @apply font-bold text-center text-4xl lg:text-5xl mb-14;
   }
 
   & .email {

@@ -1,37 +1,37 @@
 .projects {
-  @apply max-w-5xl px-5 md:px-0 pt-14 md:pt-20;
+  @apply max-w-5xl px-5 lg:px-0 pt-14 lg:pt-20;
 
   & .project {
-    @apply flex flex-col items-end md:flex-row justify-end w-full relative mb-10 md:mb-16;
+    @apply flex flex-col items-end lg:flex-row justify-end w-full relative mb-10 lg:mb-16;
 
     & .contentWrapper {
       @apply border border-gray-800 bg-gray-900 rounded-xl shadow-lg overflow-hidden;
-      @apply md:absolute md:border-none left-0 z-20 md:shadow-none md:bg-transparent;
+      @apply lg:absolute lg:border-none left-0 z-20 lg:shadow-none lg:bg-transparent;
 
       & .image {
-        @apply w-full md:hidden filter grayscale-[1] hover:grayscale-0;
+        @apply w-full lg:hidden filter grayscale-[1] hover:grayscale-0;
         @apply border border-gray-800 shadow;
         @apply transition-all duration-500;
       }
 
       & .content {
-        @apply p-4 md:p-0;
+        @apply p-4 lg:p-0;
 
         & .title {
-          @apply text-2xl font-bold font-mono mb-3 md:mb-5;
+          @apply text-2xl font-bold font-mono mb-3 lg:mb-5;
         }
 
         & .description {
-          @apply text-gray-400 bg-gray-900 md:border border-gray-800;
-          @apply md:rounded-xl md:shadow-xl;
+          @apply text-gray-400 bg-gray-900 lg:border border-gray-800;
+          @apply lg:rounded-xl lg:shadow-xl;
           @apply w-11/12 text-sm pb-1 leading-6;
-          @apply md:w-[30rem] md:text-base md:py-5 md:px-5;
+          @apply lg:w-[30rem] lg:text-base lg:py-5 lg:px-5;
         }
 
         & .tags {
-          @apply flex flex-wrap justify-start text-primary-400 md:pl-1;
+          @apply flex flex-wrap justify-start text-primary-400 lg:pl-1;
           & .tag {
-            @apply text-xs md:text-sm font-mono mr-4 mt-3 md:mt-5;
+            @apply text-xs lg:text-sm font-mono mr-4 mt-3 lg:mt-5;
           }
         }
 
@@ -48,7 +48,7 @@
             }
 
             & .icon {
-              @apply w-5 h-5 md:w-6 md:h-6 stroke-2;
+              @apply w-5 h-5 lg:w-6 lg:h-6 stroke-2;
               @apply transition-all duration-300;
             }
           }
@@ -57,7 +57,7 @@
     }
 
     & .imageWrapper {
-      @apply hidden md:block md:w-3/5 relative rounded-xl overflow-hidden border border-gray-900;
+      @apply hidden lg:block lg:w-3/5 relative rounded-xl overflow-hidden border border-gray-900;
 
       & .image {
         @apply w-full filter grayscale-[1] hover:grayscale-0;

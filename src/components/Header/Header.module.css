@@ -3,6 +3,6 @@
   @apply backdrop-blur-lg filter bg-[rgba(0,0,0,0.5)];
 
   & .header {
-    @apply mx-auto flex justify-between items-start md:items-center max-w-7xl px-3;
+    @apply mx-auto flex justify-between items-start lg:items-center max-w-7xl px-3;
   }
 }
