@@ -4,6 +4,7 @@ import { Tab, Transition } from "@headlessui/react";
 import { Section, Title } from "@components/Section";
 import styles from "./Experience.module.css";
 import { JOBS } from "src/constants";
+import { formatJobDate } from "src/utils";
 
 export function Experience() {
   return (
@@ -13,7 +14,7 @@ export function Experience() {
       <Tab.Group>
         <div className={styles.tabGroup}>
           <Tab.List className={styles.tabList}>
-            {JOBS.map(({ company }) => (
+            {JOBS.map(({ company, role }) => (
               <Tab
                 key={uuid()}
                 className={({ selected }) =>
@@ -22,13 +23,16 @@ export function Experience() {
                     : classNames(styles.tabWrapper)
                 }
               >
-                <div className={styles.tab}>{company}</div>
+                <span className={styles.tab}>
+                  <span>{company}</span>
+                  <span className={styles.role}>{role}</span>
+                </span>
               </Tab>
             ))}
           </Tab.List>
           <Tab.Panels>
             {JOBS.map(
-              ({ company, role, status, date, descriptions, techStack }) => (
+              ({ company, role, labels, dates, descriptions, techStack }) => (
                 <Tab.Panel
                   key={`${company}-${role}`}
                   className={styles.tabPanel}
@@ -42,10 +46,17 @@ export function Experience() {
                     >
                       <div className={styles.head}>
                         <div className={styles.role}>{role}</div>
-                        {status && (
-                          <div className={styles.status}>{status}</div>
-                        )}
-                        <small className={styles.date}>{date}</small>
+                        <div className={styles.labels}>
+                          {!!labels?.length &&
+                            labels.map(label => (
+                              <div key={label} className={styles.label}>
+                                {label}
+                              </div>
+                            ))}
+                        </div>
+                        <small className={styles.date}>
+                          {formatJobDate(dates)}
+                        </small>
                       </div>
                       <div className={styles.descriptions}>
                         {descriptions.map(description => (

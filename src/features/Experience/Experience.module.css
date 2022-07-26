@@ -1,20 +1,29 @@
 .wrapper {
-  @apply w-full max-w-5xl px-5 lg:px-0 pt-14 lg:pt-20;
+  @apply w-full max-w-5xl px-5 pt-14 lg:px-0 lg:pt-20;
 
   & .tabGroup {
     @apply flex flex-col lg:flex-row;
 
     & .tabList {
       @apply flex lg:flex-col lg:items-start;
-      @apply w-full lg:w-fit overflow-scroll space-x-4 lg:space-x-0;
+      @apply w-full space-x-4 overflow-scroll lg:w-fit lg:space-x-0;
 
       & .tabWrapper {
-        @apply w-fit lg:w-full text-left whitespace-nowrap py-1.5 text-gray-400;
+        @apply w-fit whitespace-nowrap py-1.5 text-left text-gray-400 lg:w-full;
 
         & .tab {
-          @apply py-1 px-2 text-[13px] font-mono rounded-md;
+          @apply flex flex-col;
+          @apply rounded-md py-1 px-2 font-mono lg:py-2 lg:px-3;
           @apply text-current lg:hover:bg-gray-800;
           @apply transition-all duration-500;
+
+          & .company {
+            @apply text-[13px] font-bold;
+          }
+
+          & .role {
+            @apply mt-0.5 hidden text-xs lg:inline-block;
+          }
         }
 
         &.selected .tab {
@@ -26,22 +35,25 @@
 
     & .tabPanel {
       @apply flex flex-col;
-      @apply lg:ml-8 mt-2 lg:mt-0;
+      @apply mt-2 lg:ml-8 lg:mt-0;
 
       & .head {
         @apply flex flex-col items-start space-y-3;
 
         & .role {
-          @apply flex flex-wrap items-center font-bold text-xl;
+          @apply flex flex-wrap items-center text-xl font-bold;
         }
 
-        & .status {
-          @apply inline-flex border border-gray-400 text-xs rounded-md;
-          @apply text-gray-400 px-1.5 leading-5;
+        & .labels {
+          @apply flex items-center justify-start space-x-1.5;
+          & .label {
+            @apply inline-flex rounded-md border border-gray-400 text-xs;
+            @apply px-1.5 leading-5 text-gray-400;
+          }
         }
 
         & .date {
-          @apply text-sm font-mono text-gray-400;
+          @apply font-mono text-sm text-gray-400;
         }
       }
 
@@ -49,8 +61,8 @@
         @apply flex flex-col items-start space-y-2;
         @apply mt-6 mb-6 lg:mb-3;
         & .description {
-          @apply text-gray-400 leading-6;
-          @apply before:content-["-"] before:pr-2 before:text-primary-400;
+          @apply leading-6 text-gray-400;
+          @apply before:pr-2 before:text-primary-400 before:content-["-"];
         }
       }
 
@@ -59,7 +71,7 @@
 
         & .item,
         div {
-          @apply text-sm pr-3 text-gray-400 leading-7;
+          @apply pr-3 text-sm leading-7 text-gray-400;
         }
 
         & .item {
