@@ -1,22 +1,22 @@
 .hero {
   @apply flex flex-col items-center justify-center;
-  @apply mx-auto min-h-screen max-w-[50rem] text-white px-5;
+  @apply mx-auto min-h-screen max-w-[50rem] px-5 text-white;
 
   & .avatar {
-    @apply w-64 h-64 relative bg-cover grayscale overflow-hidden;
-    @apply rounded-full mt-24 mb-12 lg:my-12 border border-gray-900 shadow;
+    @apply relative h-64 w-64 overflow-hidden bg-cover grayscale hover:grayscale-0;
+    @apply mt-24 mb-12 rounded-full border border-gray-900 shadow lg:my-12;
   }
 
   & .bigHeading {
-    @apply font-extrabold text-5xl lg:text-7xl text-gray-50 mb-3 lg:mb-5;
+    @apply mb-3 text-5xl font-extrabold text-gray-50 lg:mb-5 lg:text-7xl;
   }
 
   & .smallHeading {
     @apply text-center text-2xl text-primary-400;
-    @apply font-mono my-2 font-bold;
+    @apply my-2 font-mono font-bold;
   }
 
   & .description {
-    @apply text-lg lg:text-xl text-center text-gray-100  lg:w-4/6 mt-3 lg:mt-5;
+    @apply mt-3 text-center text-lg text-gray-100  lg:mt-5 lg:w-4/6 lg:text-xl;
   }
 }

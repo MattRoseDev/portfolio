@@ -2,6 +2,7 @@ import type { Job } from "@t/job";
 import format from "date-fns/format";
 import formatDuration from "date-fns/formatDuration";
 import intervalToDuration from "date-fns/intervalToDuration";
+import { START_DATE } from "src/constants";
 
 export function formatJobDate(dates: Job["dates"]) {
   const PATTERN = "MMM yyyy";
@@ -19,3 +20,8 @@ export function formatJobDate(dates: Job["dates"]) {
 
   return `${startText} - ${endText} (${durationText})`;
 }
+
+export const experienceDuration = formatDuration(
+  intervalToDuration({ start: new Date(START_DATE), end: new Date() }),
+  { format: ["years"] },
+);
