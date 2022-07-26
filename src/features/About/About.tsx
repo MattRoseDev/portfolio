@@ -16,7 +16,16 @@ export function About() {
           performance and efficiency.
           <br />
           <br />
-          Also, I love playing piano, chess and{" "}
+          Also, I love playing piano,{" "}
+          <a
+            className={styles.link}
+            target="_blank"
+            href="https://chess.com/play/mahdineer"
+            rel="noreferrer"
+          >
+            chess
+          </a>{" "}
+          and{" "}
           <Link href={PageUrls.PHOTOS}>
             <a className={styles.link}>photography</a>
           </Link>
