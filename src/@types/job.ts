@@ -1,8 +1,8 @@
 export type Job = {
   company: string;
   role: string;
-  status?: string;
-  date: string;
+  labels?: string[];
+  dates: { start: string; end?: string };
   descriptions: string[];
   techStack: string[];
 };

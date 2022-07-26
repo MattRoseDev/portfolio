@@ -79,8 +79,8 @@ export const JOBS: Job[] = [
   {
     company: "Pragmidea LTD",
     role: "Full-Stack Developer",
-    status: "Full-Time | Remote",
-    date: "Sep 2020 – present",
+    labels: ["Full-Time", "🇬🇧 London", "Remote"],
+    dates: { start: "Sep 2020" },
     descriptions: [
       "Developed web applications based on cryptocurrency.",
       "Replaced Redux with SWR and Context API.",
@@ -93,8 +93,8 @@ export const JOBS: Job[] = [
   {
     company: "Infosaba",
     role: "Full-Stack Developer",
-    status: "Full-Time",
-    date: "Nov 2018 – Sep 2020",
+    labels: ["Full-Time"],
+    dates: { start: "Nov 2018", end: "Sep 2020" },
     descriptions: [
       "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
       "Achieved better performance by optimizing the structure of the database.",
@@ -105,8 +105,8 @@ export const JOBS: Job[] = [
   {
     company: "Tabaneh Shahr",
     role: "Front-End Developer",
-    status: "Full-Time",
-    date: "Nov 2017 – Nov 2018",
+    labels: ["Full-Time"],
+    dates: { start: "Nov 2017", end: "Nov 2018" },
     descriptions: [
       "Implemented a social network for artists.",
       "Handled notifications with Firebase.",
@@ -115,3 +115,5 @@ export const JOBS: Job[] = [
     techStack: ["React", "Redux", "Webpack", "Firebase", "Bootstrap"],
   },
 ];
+
+export const START_DATE = "Nov 2017";
