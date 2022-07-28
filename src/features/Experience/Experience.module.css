@@ -10,6 +10,7 @@
 
       & .tabWrapper {
         @apply w-fit whitespace-nowrap py-1.5 text-left text-gray-400 lg:w-full;
+        @apply outline-none;
 
         & .tab {
           @apply flex flex-col;
