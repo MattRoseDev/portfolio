@@ -80,7 +80,7 @@ export const JOBS: Job[] = [
     company: "Pragmidea LTD",
     role: "Full-Stack Developer",
     labels: ["Full-Time", "🇬🇧 London", "Remote"],
-    dates: { start: "Sep 2020" },
+    dates: { start: "2020-09-01" },
     descriptions: [
       "Developed web applications based on cryptocurrency.",
       "Replaced Redux with SWR and Context API.",
@@ -94,7 +94,7 @@ export const JOBS: Job[] = [
     company: "Infosaba",
     role: "Full-Stack Developer",
     labels: ["Full-Time"],
-    dates: { start: "Nov 2018", end: "Sep 2020" },
+    dates: { start: "2018-11-01", end: "2020-09-01" },
     descriptions: [
       "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
       "Achieved better performance by optimizing the structure of the database.",
@@ -106,7 +106,7 @@ export const JOBS: Job[] = [
     company: "Tabaneh Shahr",
     role: "Front-End Developer",
     labels: ["Full-Time"],
-    dates: { start: "Nov 2017", end: "Nov 2018" },
+    dates: { start: "2017-11-01", end: "2018-11-01" },
     descriptions: [
       "Implemented a social network for artists.",
       "Handled notifications with Firebase.",
@@ -116,4 +116,4 @@ export const JOBS: Job[] = [
   },
 ];
 
-export const START_DATE = "Nov 2017";
+export const START_DATE = "2017-11-01";
