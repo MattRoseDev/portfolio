@@ -80,7 +80,7 @@ export const JOBS: Job[] = [
     company: "Pragmidea LTD",
     role: "Full-Stack Developer",
     labels: ["Full-Time", "🇬🇧 London", "Remote"],
-    dates: { start: "2020-09-01" },
+    dates: { start: "2020-09-01", end: "2022-08-01" },
     descriptions: [
       "Developed web applications based on cryptocurrency.",
       "Replaced Redux with SWR and Context API.",
