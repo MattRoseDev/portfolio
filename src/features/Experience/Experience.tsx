@@ -3,6 +3,7 @@ import { v4 as uuid } from "uuid";
 import { Tab, Transition } from "@headlessui/react";
 import { Section, Title } from "@components/Section";
 import styles from "./Experience.module.css";
+import isEmpty from "lodash/isEmpty";
 import { JOBS } from "src/constants";
 import { formatJobDate } from "src/utils";
 
@@ -58,13 +59,15 @@ export function Experience() {
                           {formatJobDate(dates)}
                         </small>
                       </div>
-                      <div className={styles.descriptions}>
-                        {descriptions.map(description => (
-                          <div key={uuid()} className={styles.description}>
-                            {description}
-                          </div>
-                        ))}
-                      </div>
+                      {!isEmpty(descriptions) && (
+                        <div className={styles.descriptions}>
+                          {descriptions.map(description => (
+                            <div key={uuid()} className={styles.description}>
+                              {description}
+                            </div>
+                          ))}
+                        </div>
+                      )}
                       <div className={styles.techStack}>
                         <div>Tech Stack: </div>
                         {techStack.map(t => (
