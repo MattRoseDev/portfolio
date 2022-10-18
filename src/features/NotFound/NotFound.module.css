@@ -1,0 +1,17 @@
+.wrapper {
+  @apply flex flex-col items-center justify-center;
+  @apply h-screen w-full;
+
+  & .title {
+    @apply text-[7rem] font-extrabold text-white md:text-[10rem];
+  }
+
+  & .description {
+    @apply -mt-6 mb-8 text-2xl font-light text-gray-400;
+  }
+
+  & .back {
+    @apply px-2.5 py-1.5 text-sm text-white;
+    @apply rounded-lg border border-white;
+  }
+}
