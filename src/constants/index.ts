@@ -77,6 +77,14 @@ export const PROJECTS: Project[] = [
 
 export const JOBS: Job[] = [
   {
+    company: "Learned",
+    role: "Full-Stack Developer",
+    labels: ["Full-Time", "🇳🇱 Netherlands"],
+    dates: { start: "2022-08-01" },
+    descriptions: [],
+    techStack: ["React.js", "Node.js", "MongoDB", "TypeScript"],
+  },
+  {
     company: "Pragmidea LTD",
     role: "Full-Stack Developer",
     labels: ["Full-Time", "🇬🇧 London", "Remote"],
@@ -88,7 +96,14 @@ export const JOBS: Job[] = [
       "Gained more experience in writing integration, e2e, and visual tests.",
       "Implemented internal packages with rollup.js for the Authentication system.",
     ],
-    techStack: ["React", "Redux", "TailwindCSS", "Next.js", "Cypress", "Jest"],
+    techStack: [
+      "React.js",
+      "Redux",
+      "TailwindCSS",
+      "Next.js",
+      "Cypress",
+      "Jest",
+    ],
   },
   {
     company: "Infosaba",
@@ -100,7 +115,14 @@ export const JOBS: Job[] = [
       "Achieved better performance by optimizing the structure of the database.",
       "Optimized the network and cached the data intelligently to reduce user downtime.",
     ],
-    techStack: ["React", "Redux", "Node.js", "MongoDB", "Websocket", "Apollo"],
+    techStack: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "MongoDB",
+      "Websocket",
+      "Apollo",
+    ],
   },
   {
     company: "Tabaneh Shahr",
@@ -112,7 +134,7 @@ export const JOBS: Job[] = [
       "Handled notifications with Firebase.",
       "Developed an internal package for polling users.",
     ],
-    techStack: ["React", "Redux", "Webpack", "Firebase", "Bootstrap"],
+    techStack: ["React.js", "Redux", "Webpack", "Firebase", "Bootstrap"],
   },
 ];
 
