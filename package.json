@@ -1,6 +1,6 @@
 {
   "name": "mahdi.codes",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -8,9 +8,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
-    "release:breaking": "standard-version --release-as major",
-    "release:hotfix": "standard-version --release-as patch",
-    "release:non-breaking": "standard-version --release-as minor",
+    "release:major": "standard-version --tag-prefix='' --release-as major",
+    "release:minor": "standard-version --tag-prefix='' --release-as minor",
+    "release:patch": "standard-version --tag-prefix='' --release-as patch",
     "start": "next start",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
