@@ -108,7 +108,7 @@ export const JOBS: Job[] = [
   {
     company: "Infosaba",
     role: "Full-Stack Developer",
-    labels: ["Full-Time"],
+    labels: ["Full-Time", "🇮🇷 Iran"],
     dates: { start: "2018-11-01", end: "2020-09-01" },
     descriptions: [
       "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
@@ -127,7 +127,7 @@ export const JOBS: Job[] = [
   {
     company: "Tabaneh Shahr",
     role: "Front-End Developer",
-    labels: ["Full-Time"],
+    labels: ["Full-Time", "🇮🇷 Iran"],
     dates: { start: "2017-11-01", end: "2018-11-01" },
     descriptions: [
       "Implemented a social network for artists.",
