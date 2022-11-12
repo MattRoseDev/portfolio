@@ -4,7 +4,7 @@ import { PageUrls } from "src/@enums/pages";
 
 export function Logo() {
   return (
-    <Link href={PageUrls.HOME}>
+    <Link href={PageUrls.HOME} legacyBehavior>
       <a className={styles.logo}>Mahdi.Codes</a>
     </Link>
   );

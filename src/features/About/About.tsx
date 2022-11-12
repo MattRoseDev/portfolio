@@ -26,7 +26,7 @@ export function About() {
             chess
           </a>{" "}
           and{" "}
-          <Link href={PageUrls.PHOTOS}>
+          <Link href={PageUrls.PHOTOS} legacyBehavior>
             <a className={styles.link}>photography</a>
           </Link>
           .
