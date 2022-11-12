@@ -23,7 +23,7 @@ export function Navigation() {
         </label>
         <div className={styles.navigation}>
           {navigationItems.map(({ href, title }) => (
-            <Link href={href} key={uuid()}>
+            <Link href={href} key={uuid()} legacyBehavior>
               <a
                 onClick={() => inputRef.current?.click()}
                 className={styles.item}

@@ -11,8 +11,8 @@ export function Hero() {
         <Image
           priority
           src="/images/avatars/mahdi.jpg"
-          width="100%"
-          height="100%"
+          width="100"
+          height="100"
           alt="Mahdi"
           layout="responsive"
           objectFit="cover"

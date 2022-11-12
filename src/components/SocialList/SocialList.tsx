@@ -13,7 +13,7 @@ export function SocialList(props: SocialListProps) {
     <ul className={socialListClasses}>
       {SOCIAL_LIST.map(({ title, href, icon }) => (
         <li key={title}>
-          <Link href={href}>
+          <Link href={href} legacyBehavior>
             <a className={styles.socialItem} target="_blank">
               {<Icon name={icon} className="w-6" />}
             </a>

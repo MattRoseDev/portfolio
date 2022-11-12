@@ -27,7 +27,7 @@ export function Projects() {
               </div>
               <div className={styles.links}>
                 {links.map(({ icon, href }) => (
-                  <Link key={`links-${href}`} href={href}>
+                  <Link key={`links-${href}`} href={href} legacyBehavior>
                     <a className={styles.link} target="_blank">
                       <Icon name={icon} className={styles.icon} />
                     </a>
