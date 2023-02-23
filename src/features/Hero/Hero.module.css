@@ -4,7 +4,7 @@
 
   & .avatar {
     @apply relative h-64 w-64 overflow-hidden bg-cover grayscale hover:grayscale-0;
-    @apply mt-24 mb-12 rounded-full border border-gray-900 shadow lg:my-12;
+    @apply mt-24 mb-12 rounded-full border border-gray-900 shadow lg:my-12 lg:mt-24;
   }
 
   & .bigHeading {
