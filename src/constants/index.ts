@@ -78,16 +78,16 @@ export const PROJECTS: Project[] = [
 export const JOBS: Job[] = [
   {
     company: "Learned.io",
-    role: "Full-Stack Developer",
-    labels: ["Full-Time", "🇳🇱 Utrecht"],
+    role: "Full Stack Developer",
+    labels: ["Full-time", "🇳🇱 Utrecht"],
     dates: { start: "2022-08-01" },
     descriptions: [],
     techStack: ["React.js", "Node.js", "MongoDB", "TypeScript"],
   },
   {
     company: "Pragmidea LTD",
-    role: "Full-Stack Developer",
-    labels: ["Full-Time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
+    role: "Full Stack Developer",
+    labels: ["Full-time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
     dates: { start: "2020-09-01", end: "2022-08-01" },
     descriptions: [
       "Developed web applications based on cryptocurrency.",
@@ -107,8 +107,8 @@ export const JOBS: Job[] = [
   },
   {
     company: "Infosaba",
-    role: "Full-Stack Developer",
-    labels: ["Full-Time", "🇮🇷 Tehran"],
+    role: "Full Stack Developer",
+    labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2018-11-01", end: "2020-09-01" },
     descriptions: [
       "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
@@ -126,8 +126,8 @@ export const JOBS: Job[] = [
   },
   {
     company: "Tabaneh Shahr",
-    role: "Front-End Developer",
-    labels: ["Full-Time", "🇮🇷 Tehran"],
+    role: "Frontend Developer",
+    labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2017-11-01", end: "2018-11-01" },
     descriptions: [
       "Implemented a social network for artists.",

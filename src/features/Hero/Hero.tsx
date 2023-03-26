@@ -24,7 +24,7 @@ export function Hero() {
       </h2>
       <h3 className={styles.smallHeading}>Brings ideas to life with code.</h3>
       <p className={styles.description}>
-        Full-Stack Developer with <strong>+{experienceDuration}</strong> of
+        Full Stack Developer with <strong>+{experienceDuration}</strong> of
         experience developing web applications.
       </p>
       <div className="mt-10">
