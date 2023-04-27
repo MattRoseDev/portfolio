@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Header } from "@components/Header";
 import styles from "./Layout.module.css";
 import type { LayoutProps } from "./Layout.types";
+import { Header } from "@/components/Header";
 
 export function Layout(props: LayoutProps) {
   const { children } = props;

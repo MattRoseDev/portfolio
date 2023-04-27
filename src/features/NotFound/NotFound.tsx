@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./NotFound.module.css";
-import { PageUrls } from "src/@enums/pages";
+import { PageUrls } from "@/@enums/pages";
 
 export function NotFound() {
   return (

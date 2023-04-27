@@ -1,12 +1,12 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { ComponentStory, Meta } from "@storybook/react";
 import { LinkButton } from ".";
-import { StoryContainer } from "@stories/StoryContainer";
+import { StoryContainer } from "@/stories/StoryContainer";
 
 export default {
   title: "components/LinkButton",
   component: LinkButton,
-} as ComponentMeta<typeof LinkButton>;
+} as Meta<typeof LinkButton>;
 
 const Template: ComponentStory<typeof LinkButton> = args => (
   <StoryContainer>

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Section, Title, Description } from "@components/Section";
 import styles from "./About.module.css";
-import { PageUrls } from "src/@enums/pages";
-import { SKILLS } from "src/constants";
+import { PageUrls } from "@/@enums/pages";
+import { Section, Title, Description } from "@/components/Section";
+import { SKILLS } from "@/constants";
 
 export function About() {
   return (

@@ -1,7 +1,7 @@
-import { LinkButton } from "@components/Buttons/LinkButton";
-import { Section, Description } from "@components/Section";
 import styles from "./Contact.module.css";
-import { EMAIL } from "src/constants";
+import { LinkButton } from "@/components/Buttons/LinkButton";
+import { Section, Description } from "@/components/Section";
+import { EMAIL } from "@/constants";
 
 export function Contact() {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Section } from "@components/Section";
-import { SocialList } from "@components/SocialList";
 import styles from "./Hero.module.css";
-import { experienceDuration } from "src/utils";
+import { Section } from "@/components/Section";
+import { SocialList } from "@/components/SocialList";
+import { experienceDuration } from "@/utils";
 
 export function Hero() {
   return (
@@ -20,7 +20,7 @@ export function Hero() {
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
         <span>Hi, </span>
-        <span>I&apos;m Mahdi.</span>
+        <span>I&apos;m Matt.</span>
       </h2>
       <h3 className={styles.smallHeading}>Brings ideas to life with code.</h3>
       <p className={styles.description}>

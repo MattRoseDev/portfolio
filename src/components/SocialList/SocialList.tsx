@@ -2,8 +2,8 @@ import Link from "next/link";
 import classNames from "classnames";
 import styles from "./SocialList.module.css";
 import type { SocialListProps } from "./SocialList.types";
-import { Icon } from "src/components/Icon";
-import { SOCIAL_LIST } from "src/constants";
+import { Icon } from "@/components/Icon";
+import { SOCIAL_LIST } from "@/constants";
 
 export function SocialList(props: SocialListProps) {
   const { className } = props;

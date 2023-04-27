@@ -14,7 +14,7 @@
 
         & .tab {
           @apply flex flex-col;
-          @apply rounded-md py-1 px-2 font-mono lg:py-2 lg:px-3;
+          @apply rounded-md px-2 py-1 font-mono lg:px-3 lg:py-2;
           @apply text-current lg:hover:bg-gray-800;
           @apply transition-all duration-500;
 
@@ -59,11 +59,11 @@
       }
 
       & .descriptions {
-        @apply flex flex-col items-start space-y-3.5;
-        @apply mt-6 mb-6 lg:mb-3;
+        @apply flex flex-col items-start space-y-2;
+        @apply mb-6 mt-6 lg:mb-3;
         & .description {
           @apply leading-[1.25rem] text-gray-400 md:w-[32rem];
-          @apply before:pr-2 before:text-xl before:text-primary-400 before:content-["•"];
+          @apply before:pr-2 before:text-xl before:text-primary-400 before:content-["-"];
         }
       }
 

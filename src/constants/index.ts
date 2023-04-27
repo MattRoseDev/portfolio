@@ -1,6 +1,6 @@
-import type { Job } from "@t/job";
-import type { Project } from "@t/project";
-import type { Social } from "@t/social";
+import type { Job } from "@/@types/job";
+import type { Project } from "@/@types/project";
+import type { Social } from "@/@types/social";
 
 export const EMAIL = "mailto:mahdineer@pm.me";
 
@@ -50,10 +50,6 @@ export const PROJECTS: Project[] = [
         icon: "Github",
         href: "https://github.com/mahdineer/weesh-skin",
       },
-      {
-        icon: "ExternalLink",
-        href: "https://weeshme.netlify.app/",
-      },
     ],
   },
   {
@@ -66,10 +62,6 @@ export const PROJECTS: Project[] = [
       {
         icon: "Github",
         href: "https://github.com/mahdineer/gitexpo",
-      },
-      {
-        icon: "ExternalLink",
-        href: "https://gitexpo.netlify.app/",
       },
     ],
   },

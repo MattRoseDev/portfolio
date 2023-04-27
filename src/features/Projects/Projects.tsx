@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Icon } from "@components/Icon";
-import { Section, Title } from "@components/Section";
 import styles from "./Projects.module.css";
-import { PROJECTS } from "src/constants";
+import { Icon } from "@/components/Icon";
+import { Section, Title } from "@/components/Section";
+import { PROJECTS } from "@/constants";
 
 export function Projects() {
   return (

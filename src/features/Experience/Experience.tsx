@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import { v4 as uuid } from "uuid";
 import { Tab, Transition } from "@headlessui/react";
-import { Section, Title } from "@components/Section";
 import styles from "./Experience.module.css";
+import { Section, Title } from "@/components/Section";
+import { JOBS } from "@/constants";
+import { formatJobDate } from "@/utils";
 import isEmpty from "lodash/isEmpty";
-import { JOBS } from "src/constants";
-import { formatJobDate } from "src/utils";
 
 export function Experience() {
   return (
