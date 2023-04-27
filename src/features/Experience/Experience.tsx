@@ -62,9 +62,11 @@ export function Experience() {
                       {!isEmpty(descriptions) && (
                         <div className={styles.descriptions}>
                           {descriptions.map(description => (
-                            <div key={uuid()} className={styles.description}>
-                              {description}
-                            </div>
+                            <div
+                              key={uuid()}
+                              className={styles.description}
+                              dangerouslySetInnerHTML={{ __html: description }}
+                            />
                           ))}
                         </div>
                       )}

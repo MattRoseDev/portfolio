@@ -15,13 +15,13 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Full Stack Developer with +4 years of experience developing web applications."
+            content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           {/* Google / Search Engine Tags */}
           <meta itemProp="name" content="Mahdi" />
           <meta
             itemProp="description"
-            content="Full Stack Developer with +4 years of experience developing web applications."
+            content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             itemProp="image"
@@ -33,7 +33,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Mahdi" />
           <meta
             property="og:description"
-            content="Full Stack Developer with +4 years of experience developing web applications."
+            content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             property="og:image"
@@ -44,7 +44,7 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="Mahdi" />
           <meta
             name="twitter:description"
-            content="Full Stack Developer with +4 years of experience developing web applications."
+            content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             name="twitter:image"

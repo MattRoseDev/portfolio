@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
 export const JOBS: Job[] = [
   {
     company: "Learned.io",
-    role: "Full Stack Developer",
+    role: "Full Stack Engineer",
     labels: ["Full-time", "🇳🇱 Utrecht"],
     dates: { start: "2022-08-01" },
     descriptions: [],
@@ -86,15 +86,15 @@ export const JOBS: Job[] = [
   },
   {
     company: "Pragmidea LTD",
-    role: "Full Stack Developer",
+    role: "Full Stack Engineer",
     labels: ["Full-time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
     dates: { start: "2020-09-01", end: "2022-08-01" },
     descriptions: [
-      "Developed web applications based on cryptocurrency.",
-      "Replaced Redux with SWR and Context API.",
-      "Collaborated with the technical team (Backend, DevOps, QA).",
-      "Gained more experience in writing integration, e2e, and visual tests.",
-      "Implemented internal packages with rollup.js for the Authentication system.",
+      "Created web applications that utilize cryptocurrency.",
+      "Substituted Redux with SWR and Context API.",
+      "Worked alongside the technical team (Backend, DevOps, QA) on various projects.",
+      "Acquired proficiency in composing integration, end-to-end, and visual tests.",
+      "Developed in-house packages for the Authentication system using rollup.js.",
     ],
     techStack: [
       "React.js",
@@ -107,13 +107,13 @@ export const JOBS: Job[] = [
   },
   {
     company: "Infosaba",
-    role: "Full Stack Developer",
+    role: "Full Stack Engineer",
     labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2018-11-01", end: "2020-09-01" },
     descriptions: [
-      "Implemented a messenger (direct messages, channels, and groups) for 500K clients.",
-      "Achieved better performance by optimizing the structure of the database.",
-      "Optimized the network and cached the data intelligently to reduce user downtime.",
+      "Established a messaging system (including direct messages, channels, and groups) for <b>half a million</b> clients.",
+      "Enhanced performance by streamlining the database structure.",
+      "Improved network optimization and implemented intelligent data caching to minimize user downtime.",
     ],
     techStack: [
       "React.js",
@@ -126,13 +126,13 @@ export const JOBS: Job[] = [
   },
   {
     company: "Tabaneh Shahr",
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2017-11-01", end: "2018-11-01" },
     descriptions: [
-      "Implemented a social network for artists.",
-      "Handled notifications with Firebase.",
-      "Developed an internal package for polling users.",
+      "Created a social media platform for artists.",
+      "Managed notifications through Firebase.",
+      "Constructed an internal module for surveying users.",
     ],
     techStack: ["React.js", "Redux", "Webpack", "Firebase", "Bootstrap"],
   },

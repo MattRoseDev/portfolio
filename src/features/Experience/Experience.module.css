@@ -59,11 +59,11 @@
       }
 
       & .descriptions {
-        @apply flex flex-col items-start space-y-2;
+        @apply flex flex-col items-start space-y-3.5;
         @apply mt-6 mb-6 lg:mb-3;
         & .description {
-          @apply leading-6 text-gray-400;
-          @apply before:pr-2 before:text-primary-400 before:content-["-"];
+          @apply leading-[1.25rem] text-gray-400 md:w-[32rem];
+          @apply before:pr-2 before:text-xl before:text-primary-400 before:content-["•"];
         }
       }
 
