@@ -7,7 +7,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Mahdi.Codes</title>
+        <title>Matt Rose</title>
       </Head>
       <Layout>
         <Home />

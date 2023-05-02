@@ -18,37 +18,37 @@ class MyDocument extends Document {
             content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           {/* Google / Search Engine Tags */}
-          <meta itemProp="name" content="Mahdi" />
+          <meta itemProp="name" content="Matt" />
           <meta
             itemProp="description"
             content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             itemProp="image"
-            content="https://mahdi.codes/images/avatars/mahdi.jpg"
+            content="https://mattrose.pro/images/avatars/matt.jpg"
           />
           {/* Facebook Meta Tags */}
-          <meta property="og:url" content="https://mahdi.codes" />
+          <meta property="og:url" content="https://mattrose.pro" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Mahdi" />
+          <meta property="og:title" content="Matt" />
           <meta
             property="og:description"
             content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             property="og:image"
-            content="https://mahdi.codes/images/avatars/mahdi.jpg"
+            content="https://mattrose.pro/images/avatars/matt.jpg"
           />
           {/* Twitter Meta Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Mahdi" />
+          <meta name="twitter:title" content="Matt" />
           <meta
             name="twitter:description"
             content="Full Stack Engineer with +4 years of experience developing web applications."
           />
           <meta
             name="twitter:image"
-            content="https://mahdi.codes/images/avatars/mahdi.jpg"
+            content="https://mattrose.pro/images/avatars/matt.jpg"
           />
         </Head>
         <body>

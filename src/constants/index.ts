@@ -2,28 +2,28 @@ import type { Job } from "@/@types/job";
 import type { Project } from "@/@types/project";
 import type { Social } from "@/@types/social";
 
-export const EMAIL = "mailto:mahdineer@pm.me";
+export const EMAIL = "mailto:mattroseinbox@gmail.com";
 
 export const SOCIAL_LIST: Social[] = [
   {
     title: "Github",
     icon: "Github",
-    href: "https://github.com/mahdineer",
+    href: "https://github.com/themattrose",
   },
   {
     title: "Linkedin",
     icon: "Linkedin",
-    href: "https://linkedin.com/in/mahdineer",
+    href: "https://linkedin.com/in/themattrose",
   },
   {
     title: "Unsplash",
     icon: "Unsplash",
-    href: "https://unsplash.com/@mahdineer",
+    href: "https://unsplash.com/@themattrose",
   },
   {
     title: "Codepen",
     icon: "Codepen",
-    href: "https://codepen.io/mahdineer",
+    href: "https://codepen.io/themattrose",
   },
 ];
 
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     links: [
       {
         icon: "Github",
-        href: "https://github.com/mahdineer/weesh-skin",
+        href: "https://github.com/themattrose/weesh-skin",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     links: [
       {
         icon: "Github",
-        href: "https://github.com/mahdineer/gitexpo",
+        href: "https://github.com/themattrose/gitexpo",
       },
     ],
   },
@@ -73,7 +73,11 @@ export const JOBS: Job[] = [
     role: "Full Stack Engineer",
     labels: ["Full-time", "🇳🇱 Utrecht"],
     dates: { start: "2022-08-01" },
-    descriptions: [],
+    descriptions: [
+      "Enhanced the usage of TypeScript throughout the codebase, resulting in improved type safety and more maintainable code.",
+      "Developed a RESTful API using Nodejs and Express, allowing for easy integration with other services and platforms.",
+      "Worked collaboratively with the UI and QA teams to identify and resolve issues, prioritize tasks, and deliver high-quality software products.",
+    ],
     techStack: ["React.js", "Node.js", "MongoDB", "TypeScript"],
   },
   {
@@ -84,7 +88,6 @@ export const JOBS: Job[] = [
     descriptions: [
       "Created web applications that utilize cryptocurrency.",
       "Substituted Redux with SWR and Context API.",
-      "Worked alongside the technical team (Backend, DevOps, QA) on various projects.",
       "Acquired proficiency in composing integration, end-to-end, and visual tests.",
       "Developed in-house packages for the Authentication system using rollup.js.",
     ],

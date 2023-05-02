@@ -10,10 +10,10 @@ export function Hero() {
       <div className={styles.avatar}>
         <Image
           priority
-          src="/images/avatars/mahdi.jpg"
+          src="/images/avatars/matt.jpg"
           width="100"
           height="100"
-          alt="Mahdi"
+          alt="Matt Rose"
           layout="responsive"
           objectFit="cover"
         />
