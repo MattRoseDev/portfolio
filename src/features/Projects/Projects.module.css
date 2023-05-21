@@ -1,15 +1,15 @@
 .projects {
-  @apply max-w-5xl px-5 lg:px-0 pt-14 lg:pt-20;
+  @apply max-w-5xl px-5 pt-14 lg:px-0 lg:pt-20;
 
   & .project {
-    @apply flex flex-col items-end lg:flex-row justify-end w-full relative mb-10 lg:mb-16;
+    @apply relative mb-10 flex w-full flex-col items-end justify-end lg:mb-16 lg:flex-row;
 
     & .contentWrapper {
-      @apply border border-gray-800 bg-gray-900 rounded-xl shadow-lg overflow-hidden;
-      @apply lg:absolute lg:border-none left-0 z-20 lg:shadow-none lg:bg-transparent;
+      @apply overflow-hidden rounded-xl border border-gray-800 bg-gray-950 shadow-lg;
+      @apply left-0 z-20 lg:absolute lg:border-none lg:bg-transparent lg:shadow-none;
 
       & .image {
-        @apply w-full lg:hidden filter grayscale-[1] hover:grayscale-0;
+        @apply w-full grayscale-[1] filter hover:grayscale-0 lg:hidden;
         @apply border border-gray-800 shadow;
         @apply transition-all duration-500;
       }
@@ -18,27 +18,27 @@
         @apply p-4 lg:p-0;
 
         & .title {
-          @apply text-2xl font-bold font-mono mb-3 lg:mb-5;
+          @apply mb-3 font-mono text-2xl font-bold lg:mb-5;
         }
 
         & .description {
-          @apply text-gray-400 bg-gray-900 lg:border border-gray-800;
+          @apply border-gray-800 bg-gray-950 text-gray-400 lg:border;
           @apply lg:rounded-xl lg:shadow-xl;
-          @apply w-11/12 text-sm pb-1 leading-6;
-          @apply lg:w-[30rem] lg:text-base lg:py-5 lg:px-5;
+          @apply w-11/12 pb-1 text-sm leading-6;
+          @apply lg:w-[30rem] lg:px-5 lg:py-5 lg:text-base;
         }
 
         & .tags {
-          @apply flex flex-wrap justify-start text-primary-400 lg:pl-1;
+          @apply flex flex-wrap justify-start text-primary-500 lg:pl-1;
           & .tag {
-            @apply text-xs lg:text-sm font-mono mr-4 mt-3 lg:mt-5;
+            @apply mr-4 mt-3 font-mono text-xs lg:mt-5 lg:text-sm;
           }
         }
 
         & .links {
-          @apply flex text-gray-400 space-x-7 pt-5;
+          @apply flex space-x-7 pt-5 text-gray-400;
           & .link {
-            @apply text-sm font-mono;
+            @apply font-mono text-sm;
 
             &:hover {
               & .icon {
@@ -48,7 +48,7 @@
             }
 
             & .icon {
-              @apply w-5 h-5 lg:w-6 lg:h-6 stroke-2;
+              @apply h-5 w-5 stroke-2 lg:h-6 lg:w-6;
               @apply transition-all duration-300;
             }
           }
@@ -57,10 +57,10 @@
     }
 
     & .imageWrapper {
-      @apply hidden lg:block lg:w-3/5 relative rounded-xl overflow-hidden border border-gray-900;
+      @apply relative hidden overflow-hidden rounded-xl border border-gray-900 lg:block lg:w-3/5;
 
       & .image {
-        @apply w-full filter grayscale-[1] hover:grayscale-0;
+        @apply w-full grayscale-[1] filter hover:grayscale-0;
         @apply border border-gray-800 shadow;
         @apply transition-all duration-500;
       }

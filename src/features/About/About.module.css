@@ -1,27 +1,27 @@
 .about {
-  @apply pt-14 lg:pt-20 max-w-5xl px-5 lg:px-0;
+  @apply max-w-5xl px-5 pt-14 lg:px-0 lg:pt-20;
 
   & .description {
-    @apply lg:text-lg text-gray-300 lg:w-4/6 mt-3 lg:mt-4 leading-7;
+    @apply mt-3 leading-7 text-gray-300 lg:mt-4 lg:w-4/6 lg:text-lg;
   }
 
   & .skills {
-    @apply flex flex-wrap w-full lg:w-[30rem] font-mono mt-3;
+    @apply mt-3 flex w-full flex-wrap font-mono lg:w-[30rem];
 
     & .skill {
-      @apply w-full sm:w-1/2 pt-4 text-[15px] text-gray-100;
+      @apply w-full pt-4 text-[15px] text-gray-100 sm:w-1/2;
     }
 
     & .skill::before {
-      @apply content-["-"] pr-2.5 text-primary-400;
+      @apply pr-2.5 text-primary-500 content-["-"];
     }
   }
 
   & .icon {
-    @apply w-14 h-14 m-5 filter brightness-[100] opacity-10;
+    @apply m-5 h-14 w-14 opacity-10 brightness-[100] filter;
   }
 
   & .link {
-    @apply cursor-pointer text-primary-400;
+    @apply cursor-pointer text-primary-500;
   }
 }

@@ -1,10 +1,10 @@
 .socialList {
-  @apply flex justify-center text-primary-400 space-x-3;
+  @apply flex justify-center space-x-3 text-primary-500;
 }
 
 .socialItem {
   @apply flex items-center justify-center;
-  @apply cursor-pointer relative p-2;
+  @apply relative cursor-pointer p-2;
   @apply hover:text-white;
   @apply transition-all duration-300;
 }

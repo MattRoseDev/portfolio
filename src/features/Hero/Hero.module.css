@@ -3,8 +3,9 @@
   @apply mx-auto min-h-screen max-w-[50rem] px-5 text-white;
 
   & .avatar {
-    @apply relative h-64 w-64 overflow-hidden bg-cover grayscale hover:grayscale-0;
-    @apply mt-24 mb-12 rounded-full border border-gray-900 shadow lg:my-12 lg:mt-24;
+    @apply relative h-56 w-56 overflow-hidden bg-cover;
+    @apply mb-12 mt-24 rounded-full border border-primary-950 lg:my-12 lg:mt-24;
+    @apply shadow-[0_0_60px_50px_rgba(30,58,138,0.25)];
   }
 
   & .bigHeading {
@@ -12,7 +13,7 @@
   }
 
   & .smallHeading {
-    @apply text-center text-2xl text-primary-400;
+    @apply text-center text-2xl text-primary-500;
     @apply my-2 font-mono font-bold;
   }
 
