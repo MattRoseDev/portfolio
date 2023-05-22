@@ -1,93 +1,91 @@
 .wrapper {
-  @apply w-full max-w-5xl px-5 pt-14 lg:px-0 lg:pt-20;
+  @apply w-full max-w-5xl pl-2 pr-3 pt-14 lg:px-0 lg:pt-20;
 
-  & .tabGroup {
-    @apply flex flex-col lg:flex-row;
+  & .experience {
+    & .section {
+      @apply relative flex flex-row gap-2;
 
-    & .tabList {
-      @apply flex lg:flex-col lg:items-start;
-      @apply w-full space-x-4 overflow-scroll lg:w-fit lg:space-x-0;
+      & .line {
+        @apply absolute bottom-0 left-[1rem] top-4 w-px bg-gray-900 md:left-[1.5rem] md:top-10;
+      }
 
-      & .tabWrapper {
-        @apply w-fit whitespace-nowrap py-1.5 text-left text-gray-400 lg:w-full;
-        @apply outline-none;
+      & .circle {
+        @apply flex items-center justify-center;
+        @apply relative h-8 w-8 rounded-full md:h-12 md:w-12;
+        @apply border border-gray-900 bg-gray-950;
 
-        & .tab {
-          @apply flex flex-col;
-          @apply rounded-md px-2 py-1 font-mono lg:px-3 lg:py-2;
-          @apply text-current lg:hover:bg-gray-800;
-          @apply transition-all duration-500;
+        & .dot {
+          @apply h-2 w-2 rounded-full bg-gray-600 md:h-3 md:w-3;
+        }
+      }
+
+      &:first-child {
+        & .line {
+          @apply bg-gradient-to-t from-gray-900 to-primary-500;
+        }
+
+        & .circle {
+          background: radial-gradient(circle, #020617 20%, #172554 100%);
+
+          & .dot {
+            @apply relative bg-primary-500;
+          }
+
+          & .ping {
+            @apply absolute inline-flex h-[50%] w-[50%] animate-ping rounded-full bg-primary-400 opacity-75;
+          }
+        }
+      }
+
+      & .job {
+        @apply flex flex-col;
+        @apply mb-16 lg:ml-8;
+
+        & .head {
+          @apply flex flex-col items-start space-y-3;
 
           & .company {
-            @apply text-[13px] font-bold;
+            @apply mt-0.5;
           }
 
           & .role {
-            @apply mt-0.5 hidden text-xs lg:inline-block;
+            @apply text-xl font-bold;
+          }
+
+          & .labels {
+            @apply flex items-center justify-start space-x-1.5;
+            & .label {
+              @apply inline-flex rounded-md border border-gray-400 text-xs;
+              @apply px-1.5 leading-5 text-gray-400;
+            }
+          }
+
+          & .date {
+            @apply font-mono text-sm text-gray-400;
           }
         }
 
-        &.selected .tab {
-          @apply bg-primary-400 font-bold text-gray-900;
-          @apply transition-all duration-500;
-        }
-      }
-    }
-
-    & .tabPanel {
-      @apply flex flex-col;
-      @apply mt-2 lg:ml-8 lg:mt-0;
-
-      & .head {
-        @apply flex flex-col items-start space-y-3;
-
-        & .role {
-          @apply flex flex-wrap items-center text-xl font-bold;
-        }
-
-        & .labels {
-          @apply flex items-center justify-start space-x-1.5;
-          & .label {
-            @apply inline-flex rounded-md border border-gray-400 text-xs;
-            @apply px-1.5 leading-5 text-gray-400;
+        & .descriptions {
+          @apply flex flex-col items-start space-y-2;
+          @apply mb-6 mt-6 lg:mb-3;
+          & .description {
+            @apply leading-[1.25rem] text-gray-400 md:w-[32rem];
+            @apply before:pr-2 before:text-xl before:text-primary-500 before:content-["•"];
           }
         }
 
-        & .date {
-          @apply font-mono text-sm text-gray-400;
+        & .techStack {
+          @apply flex flex-wrap pt-3;
+
+          & .item,
+          div {
+            @apply pr-3 text-sm leading-7 text-gray-400;
+          }
+
+          & .item {
+            @apply pr-3.5 text-primary-500;
+          }
         }
-      }
-
-      & .descriptions {
-        @apply flex flex-col items-start space-y-2;
-        @apply mb-6 mt-6 lg:mb-3;
-        & .description {
-          @apply leading-[1.25rem] text-gray-400 md:w-[32rem];
-          @apply before:pr-2 before:text-xl before:text-primary-400 before:content-["-"];
-        }
-      }
-
-      & .techStack {
-        @apply flex flex-wrap pt-3;
-
-        & .item,
-        div {
-          @apply pr-3 text-sm leading-7 text-gray-400;
-        }
-
-        & .item {
-          @apply pr-3.5 text-primary-400;
-        }
-      }
-
-      & .enterTransition {
-        @apply transition-opacity duration-500;
-      }
-      & .enterFromTransition {
-        @apply opacity-0;
-      }
-      & .enterToTransition {
-        @apply opacity-100;
       }
     }
   }
