@@ -1,8 +1,8 @@
 .wrapper {
-  @apply fixed top-0 left-0 right-0 z-50;
-  @apply backdrop-blur-lg filter bg-[rgba(0,0,0,0.5)];
+  @apply fixed left-0 right-0 top-0 z-50;
+  @apply border-b border-gray-900 bg-[rgba(2,6,23,0.5)] filter backdrop-blur-lg;
 
   & .header {
-    @apply mx-auto flex justify-between items-start lg:items-center max-w-7xl px-3;
+    @apply mx-auto flex max-w-7xl items-start justify-between px-3 lg:items-center;
   }
 }

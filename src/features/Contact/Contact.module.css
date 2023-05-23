@@ -1,15 +1,15 @@
 .contact {
-  @apply flex flex-col justify-center items-center px-5 lg:px-0;
+  @apply flex flex-col items-center justify-center px-5 lg:px-0;
   @apply mx-auto lg:max-w-3xl;
-  @apply mb-44 lg:mb-52 pt-14 lg:pt-20;
-  @apply text-base lg:text-lg text-center;
+  @apply mb-44 pt-14 lg:mb-52 lg:pt-20;
+  @apply text-center text-base lg:text-lg;
 
   & .title {
-    @apply font-bold text-center text-4xl lg:text-5xl mb-14;
+    @apply mb-14 text-center text-4xl font-bold lg:text-5xl;
   }
 
   & .email {
-    @apply py-2 px-5 mt-10 rounded-full font-medium;
-    @apply bg-primary-400 text-gray-900;
+    @apply mt-10 rounded-full px-5 py-2 font-medium;
+    @apply bg-primary-500 text-gray-900;
   }
 }
