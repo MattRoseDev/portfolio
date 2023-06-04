@@ -1,18 +1,18 @@
 .photos {
-  @apply max-w-7xl px-5 lg:px-0 pt-14 lg:pt-20;
+  @apply max-w-7xl px-5 pt-14 lg:px-0 lg:pt-20;
 
   & .title {
-    @apply text-center mb-12 lg:mb-28;
+    @apply mb-12 text-center lg:mb-28;
   }
 
   & .columns {
-    @apply flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5;
+    @apply flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0;
 
     & .column {
-      @apply w-full flex flex-col space-y-5 items-start;
+      @apply flex w-full flex-col items-start space-y-5;
 
       & .image {
-        @apply rounded-xl filter grayscale-[1] hover:grayscale-0;
+        @apply rounded-xl;
         @apply border border-gray-800 shadow;
         @apply transition-all duration-1000;
       }

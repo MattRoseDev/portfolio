@@ -10,19 +10,9 @@ module.exports = {
         sans: ["Inter", "sans-serif"],
         mono: ["Roboto Mono"],
       },
-    },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: colors.black,
-      white: colors.white,
-      gray: colors.slate,
-      red: colors.rose,
-      green: colors.green,
-      primary: colors.blue,
-      orange: colors.orange,
-      blue: colors.blue,
-      purple: colors.purple,
+      colors: {
+        primary: colors.blue,
+      },
     },
   },
   variants: {
