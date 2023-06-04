@@ -1,3 +1,4 @@
+import { IMAGES } from "./images";
 import type { Job } from "@/@types/job";
 import type { Project } from "@/@types/project";
 import type { Social } from "@/@types/social";
@@ -44,10 +45,10 @@ export const PROJECTS: Project[] = [
     description:
       "Text-based social network specialized in making wishes with unique features like reweesh, in-app credit, combinator themes, and ticket service for support.",
     tags: ["React", "Styled-Component", "GraphQL", "Heroku"],
-    image: "/images/projects/weesh.png",
+    image: IMAGES.PROJECTS.WEESH,
     links: [
       {
-        icon: "Github",
+        icon: "ExternalLink",
         href: "https://github.com/themattrose/weesh-skin",
       },
     ],
@@ -57,10 +58,10 @@ export const PROJECTS: Project[] = [
     description:
       "Better Github Explorer of the Trending repositories with multi-select searching and filtering interesting projects.",
     tags: ["React", "Github API", "GraphQL", "Heroku"],
-    image: "/images/projects/gitexpo.png",
+    image: IMAGES.PROJECTS.GIT_EXPO,
     links: [
       {
-        icon: "Github",
+        icon: "ExternalLink",
         href: "https://github.com/themattrose/gitexpo",
       },
     ],

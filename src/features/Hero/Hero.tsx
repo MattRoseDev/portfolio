@@ -1,22 +1,15 @@
-import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 import styles from "./Hero.module.css";
 import { Section } from "@/components/Section";
 import { SocialList } from "@/components/SocialList";
+import { IMAGES } from "@/constants/images";
 import { experienceDuration } from "@/utils";
 
 export function Hero() {
   return (
     <Section id="hero" className={styles.hero}>
       <div className={styles.avatar}>
-        <Image
-          priority
-          src="/images/avatars/matt.jpg"
-          width="100"
-          height="100"
-          alt="Matt Rose"
-          layout="responsive"
-          objectFit="cover"
-        />
+        <CldImage {...IMAGES.AVATAR} priority />
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
         <span>Hi, </span>

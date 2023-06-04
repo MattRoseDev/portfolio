@@ -1,42 +1,50 @@
 .projects {
   @apply max-w-5xl px-5 pt-14 lg:px-0 lg:pt-20;
 
-  & .project {
-    @apply relative mb-10 flex w-full flex-col items-end justify-end lg:mb-16 lg:flex-row;
+  & .wrapper {
+    @apply flex flex-col items-stretch gap-8;
+    & .project {
+      @apply relative flex w-full flex-col items-end justify-end;
+      @apply flex flex-col p-2 lg:flex-row lg:items-stretch lg:gap-2 lg:p-4;
+      @apply overflow-hidden rounded-xl border-t border-gray-800 bg-gray-800 bg-opacity-30 shadow-xl;
 
-    & .contentWrapper {
-      @apply overflow-hidden rounded-xl border border-gray-800 bg-gray-950 shadow-lg;
-      @apply left-0 z-20 lg:absolute lg:border-none lg:bg-transparent lg:shadow-none;
+      &:nth-child(odd) {
+        @apply lg:flex-row-reverse;
+      }
 
       & .image {
-        @apply w-full grayscale-[1] filter hover:grayscale-0 lg:hidden;
-        @apply border border-gray-800 shadow;
+        @apply aspect-[5/3] w-full rounded-xl object-cover grayscale filter;
+        @apply border border-gray-900 shadow;
         @apply transition-all duration-500;
       }
 
-      & .content {
-        @apply p-4 lg:p-0;
+      & .info {
+        @apply px-2 pb-2 lg:flex lg:flex-col lg:justify-between lg:pb-2;
 
-        & .title {
-          @apply mb-3 font-mono text-2xl font-bold lg:mb-5;
-        }
+        & .content {
+          @apply flex flex-col;
+          & .title {
+            @apply flex items-center gap-2;
+            @apply mb-2 mt-3 font-mono text-2xl font-bold lg:m-0 lg:-mt-1.5;
+          }
 
-        & .description {
-          @apply border-gray-800 bg-gray-950 text-gray-400 lg:border;
-          @apply lg:rounded-xl lg:shadow-xl;
-          @apply w-11/12 pb-1 text-sm leading-6;
-          @apply lg:w-[30rem] lg:px-5 lg:py-5 lg:text-base;
+          & .description {
+            @apply border-gray-800 text-gray-400;
+            @apply w-11/12 text-sm leading-6;
+            @apply lg:w-[30rem] lg:text-base;
+          }
         }
 
         & .tags {
-          @apply flex flex-wrap justify-start text-primary-500 lg:pl-1;
+          @apply mt-2 flex flex-wrap justify-start;
           & .tag {
-            @apply mr-4 mt-3 font-mono text-xs lg:mt-5 lg:text-sm;
+            @apply mr-2 mt-2 rounded-full px-2.5 text-xs leading-7;
+            @apply bg-primary-400 bg-opacity-10 text-primary-500;
           }
         }
 
         & .links {
-          @apply flex space-x-7 pt-5 text-gray-400;
+          @apply my-3 inline-flex space-x-7 text-gray-400;
           & .link {
             @apply font-mono text-sm;
 
@@ -53,16 +61,6 @@
             }
           }
         }
-      }
-    }
-
-    & .imageWrapper {
-      @apply relative hidden overflow-hidden rounded-xl border border-gray-900 lg:block lg:w-3/5;
-
-      & .image {
-        @apply w-full grayscale-[1] filter hover:grayscale-0;
-        @apply border border-gray-800 shadow;
-        @apply transition-all duration-500;
       }
     }
   }
