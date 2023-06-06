@@ -1,5 +1,7 @@
+import { CldImage } from "next-cloudinary";
 import styles from "./Photos.module.css";
 import { Section, Title } from "@/components/Section";
+import { IMAGES } from "@/constants/images";
 
 export function Photos() {
   return (
@@ -9,46 +11,17 @@ export function Photos() {
 
         <div className={styles.columns}>
           <div className={styles.column}>
-            <img
-              className={styles.image}
-              src="/images/photos/plane.jpg"
-              alt="Plane"
-            />
-            <img
-              className={styles.image}
-              src="/images/photos/cat.jpg"
-              alt="Cat"
-            />
+            <CldImage {...IMAGES.PHOTOS.PLANE} className={styles.image} />
+            <CldImage {...IMAGES.PHOTOS.CAT} className={styles.image} />
           </div>
           <div className={styles.column}>
-            <img
-              className={styles.image}
-              src="/images/photos/light.jpg"
-              alt="Light"
-            />
-
-            <img
-              className={styles.image}
-              src="/images/photos/cat_up.jpg"
-              alt="Cat"
-            />
+            <CldImage {...IMAGES.PHOTOS.LIGHT} className={styles.image} />
+            <CldImage {...IMAGES.PHOTOS.CAT_UP} className={styles.image} />
           </div>
           <div className={styles.column}>
-            <img
-              className={styles.image}
-              src="/images/photos/woods.jpg"
-              alt="Woods"
-            />
-            <img
-              className={styles.image}
-              src="/images/photos/mountain.jpg"
-              alt="Mountain"
-            />
-            <img
-              className={styles.image}
-              src="/images/photos/branches.jpg"
-              alt="Branches"
-            />
+            <CldImage {...IMAGES.PHOTOS.WOODS} className={styles.image} />
+            <CldImage {...IMAGES.PHOTOS.MOUNTAIN} className={styles.image} />
+            <CldImage {...IMAGES.PHOTOS.BRANCHES} className={styles.image} />
           </div>
         </div>
       </div>
