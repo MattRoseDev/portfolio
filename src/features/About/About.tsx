@@ -10,14 +10,16 @@ export function About() {
       <div>
         <Title>About Me</Title>
         <Description className={styles.description}>
-          I&apos;m a top-notch Full Stack Engineer with experience under my
-          belt. I&apos;m an absolute wizard when it comes to creating and
-          maintaining web applications and internal frameworks, with a killer
-          specialization in React and Node.js. I thrive on solving complex
-          problems and optimizing code like a boss, to deliver slick, efficient,
-          and user-friendly applications. My skills are second to none, and my
-          team-focused approach means I&apos;m always ready to collaborate and
-          take things to the next level.
+          Top-notch Full Stack Engineer with over 5 years of hands-on experience
+          in developing, testing, and maintaining complex projects. Proficient
+          in React and Node.js, with a deep understanding of their respective
+          ecosystems. Adept at collaborating with cross-functional teams to
+          deliver high-quality software solutions. Skilled in implementing
+          efficient and scalable code architectures, ensuring optimal
+          performance and user experience. Excellent problem-solving and
+          analytical abilities, combined with strong attention to detail. Proven
+          track record of successfully delivering projects within deadlines
+          while adhering to best practices and industry standards.
           <br />
           <br />
           Additionally, I have a passion for playing the piano, engaging in

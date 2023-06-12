@@ -76,14 +76,14 @@ export const JOBS: Job[] = [
     dates: { start: "2022-08-01" },
     descriptions: [
       "Enhanced the usage of TypeScript throughout the codebase, resulting in improved type safety and more maintainable code.",
-      "Developed a RESTful API using Nodejs and Express, allowing for easy integration with other services and platforms.",
+      "Developed and implemented a highly efficient and reusable component showcasing a complex user interface.",
       "Worked collaboratively with the UI and QA teams to identify and resolve issues, prioritize tasks, and deliver high-quality software products.",
     ],
     techStack: ["React.js", "Node.js", "MongoDB", "TypeScript"],
   },
   {
     company: "Pragmidea LTD",
-    role: "Full Stack Engineer",
+    role: "Frontend Engineer",
     labels: ["Full-time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
     dates: { start: "2020-09-01", end: "2022-08-01" },
     descriptions: [
