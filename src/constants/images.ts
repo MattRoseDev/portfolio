@@ -1,7 +1,7 @@
 import type { Image } from "@/@types/image";
 
 export const AVATAR: Image = {
-  src: "avatars/matt_rff2al",
+  src: "avatars/mattrose",
   width: 640,
   height: 640,
   alt: "Matt Rose",
