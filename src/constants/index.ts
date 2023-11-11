@@ -29,14 +29,16 @@ export const SOCIAL_LIST: Social[] = [
 ];
 
 export const SKILLS: string[] = [
-  "React (Next.js)",
+  "React(Next.js)",
   "Typescript",
-  "GraphQL (Apollo)",
-  "Tailwind CSS",
-  "Postgres",
+  "Redux",
+  "GraphQL(Apollo)",
+  "TailwindCSS",
+  "MongoDB/Postgres",
   "Node.js",
-  "Golang",
   "Docker",
+  "Jest",
+  "Cypress",
 ];
 
 export const PROJECTS: Project[] = [
@@ -74,31 +76,33 @@ export const JOBS: Job[] = [
     role: "Full Stack Engineer",
     labels: ["Full-time", "🇳🇱 Utrecht"],
     dates: { start: "2022-08-01" },
-    descriptions: [
-      "Enhanced the usage of TypeScript throughout the codebase, resulting in improved type safety and more maintainable code.",
-      "Developed and implemented a highly efficient and reusable component showcasing a complex user interface.",
-      "Worked collaboratively with the UI and QA teams to identify and resolve issues, prioritize tasks, and deliver high-quality software products.",
+    techStack: [
+      "React.js",
+      "Redux",
+      "TypeScript",
+      "Styled-components",
+      "Storybook",
+      "Jest",
+      "Node.js",
+      "MongoDB",
+      "GCP",
     ],
-    techStack: ["React.js", "Node.js", "MongoDB", "TypeScript"],
   },
   {
     company: "Pragmidea LTD",
     role: "Frontend Engineer",
     labels: ["Full-time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
     dates: { start: "2020-09-01", end: "2022-08-01" },
-    descriptions: [
-      "Created web applications that utilize cryptocurrency.",
-      "Substituted Redux with SWR and Context API.",
-      "Acquired proficiency in composing integration, end-to-end, and visual tests.",
-      "Developed in-house packages for the Authentication system using rollup.js.",
-    ],
     techStack: [
       "React.js",
-      "Redux",
-      "TailwindCSS",
       "Next.js",
-      "Cypress",
+      "React Query",
+      "Typescript",
+      "TailwindCSS",
+      "Storybook",
       "Jest",
+      "Cypress",
+      "React Testing Library",
     ],
   },
   {
@@ -106,18 +110,13 @@ export const JOBS: Job[] = [
     role: "Full Stack Engineer",
     labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2018-11-01", end: "2020-09-01" },
-    descriptions: [
-      "Established a messaging system (including direct messages, channels, and groups) for <b>half a million</b> clients.",
-      "Enhanced performance by streamlining the database structure.",
-      "Improved network optimization and implemented intelligent data caching to minimize user downtime.",
-    ],
     techStack: [
       "React.js",
       "Redux",
       "Node.js",
       "MongoDB",
       "Websocket",
-      "Apollo",
+      "Apollo GraphQL",
     ],
   },
   {
@@ -125,11 +124,6 @@ export const JOBS: Job[] = [
     role: "Frontend Engineer",
     labels: ["Full-time", "🇮🇷 Tehran"],
     dates: { start: "2017-11-01", end: "2018-11-01" },
-    descriptions: [
-      "Created a social media platform for artists.",
-      "Managed notifications through Firebase.",
-      "Constructed an internal module for surveying users.",
-    ],
     techStack: ["React.js", "Redux", "Webpack", "Firebase", "Bootstrap"],
   },
 ];

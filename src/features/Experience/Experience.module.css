@@ -75,10 +75,14 @@
         }
 
         & .techStack {
-          @apply mt-2 flex flex-wrap;
+          @apply mt-2 flex max-w-lg flex-wrap items-center font-mono;
+
+          & .skills {
+            @apply mr-2 mt-2 text-sm text-gray-400;
+          }
 
           & .item {
-            @apply mr-2 mt-2 rounded-full px-2.5 py-0 text-xs leading-7;
+            @apply mr-2 mt-2 rounded-full px-2 py-1 text-xs;
             @apply bg-primary-400 bg-opacity-10 text-primary-500 shadow-md;
           }
         }

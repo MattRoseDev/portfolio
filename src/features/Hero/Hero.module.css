@@ -4,12 +4,11 @@
 
   & .avatar {
     @apply relative h-56 w-56 overflow-hidden bg-cover;
-    @apply mb-12 mt-24 rounded-full border border-primary-950 lg:my-12 lg:mt-24;
+    @apply mb-12 mt-24 rounded-full lg:my-12 lg:mt-24;
     @apply shadow-[0_0_100px_50px_rgba(29,78,216,0.1)];
-    /* radial-gradient(600px at 1039px 141px, rgba(29, 78, 216, 0.15), transparent 80%) */
 
     & img {
-      @apply scale-125;
+      @apply scale-105;
     }
   }
 
