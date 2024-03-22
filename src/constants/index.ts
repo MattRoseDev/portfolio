@@ -9,22 +9,22 @@ export const SOCIAL_LIST: Social[] = [
   {
     title: "Github",
     icon: "Github",
-    href: "https://github.com/themattrose",
+    href: "https://github.com/MattRoseDev",
   },
   {
     title: "Linkedin",
     icon: "Linkedin",
-    href: "https://linkedin.com/in/themattrose",
+    href: "https://linkedin.com/in/mattrosedev",
   },
   {
     title: "Unsplash",
     icon: "Unsplash",
-    href: "https://unsplash.com/@themattrose",
+    href: "https://unsplash.com/@mattrose",
   },
   {
     title: "Codepen",
     icon: "Codepen",
-    href: "https://codepen.io/themattrose",
+    href: "https://codepen.io/mattrose",
   },
 ];
 
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     links: [
       {
         icon: "ExternalLink",
-        href: "https://github.com/themattrose/weesh-skin",
+        href: "https://github.com/MattRoseDev/weesh-skin",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     links: [
       {
         icon: "ExternalLink",
-        href: "https://github.com/themattrose/gitexpo",
+        href: "https://github.com/MattRoseDev/gitexpo",
       },
     ],
   },
