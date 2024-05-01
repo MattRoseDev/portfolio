@@ -12,16 +12,14 @@ export function About() {
         <Title>About Me</Title>
         <Description className={styles.description}>
           Top-notch Full Stack Engineer with over{" "}
-          <strong>{experienceDuration}</strong> of hands-on experience in
-          developing, testing, and maintaining complex projects. Proficient in
-          React and Node.js, with a deep understanding of their respective
-          ecosystems. Adept at collaborating with cross-functional teams to
-          deliver high-quality software solutions. Skilled in implementing
-          efficient and scalable code architectures, ensuring optimal
-          performance and user experience. Excellent problem-solving and
-          analytical abilities, combined with strong attention to detail. Proven
-          track record of successfully delivering projects within deadlines
-          while adhering to best practices and industry standards.
+          <strong>{experienceDuration}</strong> years of experience tackling
+          complex software projects. Expertise in React and Node.js, with a deep
+          understanding of their ecosystems. Proven ability to collaborate
+          effectively and deliver high-quality solutions. Builds clean,
+          efficient, and scalable code architectures for optimal performance and
+          user experience. Strong problem-solving and analytical skills with a
+          keen eye for detail. Consistent track record of successful project
+          delivery within deadlines and following best practices.
           <br />
           <br />
           Additionally, I have a passion for playing the piano, engaging in
