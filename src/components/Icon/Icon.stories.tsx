@@ -1,14 +1,14 @@
 import React from "react";
-import type { ComponentStory, ComponentMeta } from "@storybook/react";
+import type { StoryFn, Meta } from "@storybook/react";
 import { Icon, iconsList } from ".";
 import { StoryContainer } from "@/stories/StoryContainer";
 
 export default {
   title: "components/Icon",
   component: Icon,
-} as ComponentMeta<typeof Icon>;
+} as Meta<typeof Icon>;
 
-const Template: ComponentStory<typeof Icon> = args => (
+const Template: StoryFn<typeof Icon> = args => (
   <StoryContainer>
     <Icon {...args} width="50" height="50" />
   </StoryContainer>

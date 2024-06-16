@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Home.module.css";
 import { SocialList } from "@/components/SocialList";
 import { About } from "@/features/About";

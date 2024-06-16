@@ -1,14 +1,14 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { StoryFn, Meta } from "@storybook/react";
 import { Navigation } from ".";
 import { StoryContainer } from "@/stories/StoryContainer";
 
 export default {
   title: "components/Navigation",
   component: Navigation,
-} as ComponentMeta<typeof Navigation>;
+} as Meta<typeof Navigation>;
 
-const Template: ComponentStory<typeof Navigation> = () => (
+const Template: StoryFn<typeof Navigation> = () => (
   <StoryContainer>
     <Navigation />
   </StoryContainer>

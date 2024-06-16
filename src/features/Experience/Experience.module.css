@@ -25,7 +25,7 @@
         }
 
         & .circle {
-          background: radial-gradient(circle, #0f172a 20%, #172554 100%);
+          @apply bg-gradient-radial from-gray-900 to-primary-950;
 
           & .dot {
             @apply relative bg-primary-500;

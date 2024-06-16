@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./NotFound.module.css";
 import { PageUrls } from "@/@enums/pages";

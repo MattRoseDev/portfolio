@@ -12,3 +12,4 @@ export const parameters = {
     current: "light",
   },
 };
+export const tags = ["autodocs", "autodocs"];

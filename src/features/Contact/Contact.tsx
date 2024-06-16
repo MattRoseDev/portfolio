@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Contact.module.css";
 import { LinkButton } from "@/components/Buttons/LinkButton";
 import { Section, Description } from "@/components/Section";

@@ -1,3 +1,5 @@
+"use client";
+
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 import styles from "./Projects.module.css";

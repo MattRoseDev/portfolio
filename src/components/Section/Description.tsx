@@ -1,3 +1,5 @@
+"use client";
+
 import classNames from "classnames";
 import styles from "./Section.module.css";
 import type { DescriptionProps } from "./Section.types";

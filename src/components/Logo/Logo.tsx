@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Logo.module.css";
 import { PageUrls } from "@/@enums/pages";

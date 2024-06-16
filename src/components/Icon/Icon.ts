@@ -1,3 +1,5 @@
+"use client";
+
 import { createElement, SVGAttributes } from "react";
 import ChevronRight from "./svg/chevron-right.svg";
 import Codepen from "./svg/codepen.svg";

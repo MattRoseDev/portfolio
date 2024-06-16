@@ -1,7 +1,8 @@
 const { TsconfigPathsPlugin } = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -18,7 +19,9 @@ module.exports = {
     },
     "storybook-css-modules-preset",
     "storybook-dark-mode",
+    "@chromatic-com/storybook",
   ],
+
   webpackFinal: async config => {
     config.resolve.plugins = [
       ...(config.resolve.plugins || []),
@@ -36,5 +39,16 @@ module.exports = {
     });
 
     return config;
+  },
+
+  framework: {
+    name: "@storybook/nextjs",
+    options: {},
+  },
+
+  docs: {},
+
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
   },
 };

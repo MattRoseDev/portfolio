@@ -1,3 +1,5 @@
+"use client";
+
 import { CldImage } from "next-cloudinary";
 import styles from "./Hero.module.css";
 import { Section } from "@/components/Section";
@@ -9,6 +11,7 @@ export function Hero() {
   return (
     <Section id="hero" className={styles.hero}>
       <div className={styles.avatar}>
+        <div className={styles.shadow}></div>
         <CldImage {...IMAGES.AVATAR} priority />
       </div>
       <h2 className={`${styles.bigHeading} ${styles.highlight}`}>
