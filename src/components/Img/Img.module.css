@@ -1,0 +1,31 @@
+.wrapper {
+  @apply mt-0 cursor-pointer;
+
+  & img {
+    @apply rounded-md object-contain lg:rounded-lg;
+    @apply grayscale filter hover:grayscale-0;
+  }
+
+  &.isExpanded {
+    @apply cursor-default;
+    @apply fixed inset-0 z-50 flex items-center justify-center backdrop-blur;
+
+    & .overlay {
+      @apply fixed inset-0 bg-black opacity-70;
+    }
+
+    & .image {
+      @apply z-50 flex;
+
+      & .close {
+        @apply absolute right-5 top-5 h-8 w-8 text-gray-400 hover:text-white;
+        @apply transition-all duration-500;
+      }
+    }
+
+    & img {
+      @apply grayscale-0 filter;
+      @apply h-screen w-fit p-8;
+    }
+  }
+}
