@@ -1,28 +1,26 @@
-import { CldImage } from "next-cloudinary";
+"use client";
+
 import styles from "./Photos.module.css";
+import { usePhotos } from "./usePhotos";
+import { Img } from "@/components/Img";
 import { Section, Title } from "@/components/Section";
-import { IMAGES } from "@/constants/images";
 
 export function Photos() {
+  const { photos } = usePhotos();
+
   return (
     <Section id="photos" className={styles.photos}>
       <div>
         <Title className={styles.title}>Photos</Title>
 
         <div className={styles.columns}>
-          <div className={styles.column}>
-            <CldImage {...IMAGES.PHOTOS.PLANE} className={styles.image} />
-            <CldImage {...IMAGES.PHOTOS.CAT} className={styles.image} />
-          </div>
-          <div className={styles.column}>
-            <CldImage {...IMAGES.PHOTOS.LIGHT} className={styles.image} />
-            <CldImage {...IMAGES.PHOTOS.CAT_UP} className={styles.image} />
-          </div>
-          <div className={styles.column}>
-            <CldImage {...IMAGES.PHOTOS.WOODS} className={styles.image} />
-            <CldImage {...IMAGES.PHOTOS.MOUNTAIN} className={styles.image} />
-            <CldImage {...IMAGES.PHOTOS.BRANCHES} className={styles.image} />
-          </div>
+          {photos?.map((column, index) => (
+            <div key={`column-${index}`} className={styles.column}>
+              {column.map(photo => (
+                <Img key={photo.id} photo={photo} />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </Section>

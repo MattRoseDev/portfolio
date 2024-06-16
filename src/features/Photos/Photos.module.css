@@ -1,21 +1,15 @@
 .photos {
-  @apply max-w-7xl px-5 pt-14 lg:px-0 lg:pt-20;
+  @apply max-w-5xl px-4 pt-14 lg:px-0 lg:pt-20;
 
   & .title {
     @apply mb-12 text-center lg:mb-28;
   }
 
   & .columns {
-    @apply flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0;
+    @apply flex gap-2 lg:gap-4;
 
     & .column {
-      @apply flex w-full flex-col items-start space-y-5;
-
-      & .image {
-        @apply rounded-xl;
-        @apply border border-gray-800 shadow;
-        @apply transition-all duration-1000;
-      }
+      @apply flex w-full flex-col items-start gap-2 lg:gap-4;
     }
   }
 }

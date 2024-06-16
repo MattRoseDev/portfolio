@@ -3,7 +3,7 @@
   @apply mx-auto min-h-screen max-w-[50rem] px-5 text-white;
 
   & .avatar {
-    @apply relative h-48 w-48 bg-cover;
+    @apply relative h-52 w-52 bg-cover;
     @apply mb-20 mt-24 rounded-full;
 
     & .shadow {

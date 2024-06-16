@@ -1,27 +1,13 @@
-import type { Job } from "@/@types/job";
-import { START_DATE } from "@/constants";
-import format from "date-fns/format";
-import formatDuration from "date-fns/formatDuration";
-import intervalToDuration from "date-fns/intervalToDuration";
+export * from "./dates";
 
-export function formatJobDate(dates: Job["dates"]) {
-  const PATTERN = "MMM yyyy";
-  const { start, end } = dates;
-  const durationDates = {
-    start: new Date(start),
-    end: end ? new Date(end) : new Date(),
-  };
-  const startText = format(durationDates.start, PATTERN);
-  const endText = end ? format(durationDates.end, PATTERN) : "present";
-  const durationText = formatDuration(intervalToDuration(durationDates), {
-    format: ["years", "months"],
-    delimiter: ", ",
-  });
-
-  return `${startText} - ${endText} (${durationText})`;
+export function splitArrayToColumns<T>(flatArray: T[], numCols: number): T[][] {
+  const newArray: T[][] = [];
+  for (let c = 0; c < numCols; c++) {
+    newArray.push([]);
+  }
+  for (let i = 0; i < flatArray.length; i++) {
+    const mod = i % numCols;
+    newArray[mod].push(flatArray[i]);
+  }
+  return newArray;
 }
-
-export const experienceDuration = formatDuration(
-  intervalToDuration({ start: new Date(START_DATE), end: new Date() }),
-  { format: ["years"] },
-);

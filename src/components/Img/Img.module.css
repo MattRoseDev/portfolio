@@ -19,7 +19,7 @@
 
       & .close {
         @apply absolute right-5 top-5 h-8 w-8 text-gray-400 hover:text-white;
-        @apply transition-all duration-500;
+        @apply z-50 transition-all duration-500;
       }
     }
 
