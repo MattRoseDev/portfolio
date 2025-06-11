@@ -1,8 +1,8 @@
+import { format } from "date-fns";
+import { formatDuration } from "date-fns";
+import { intervalToDuration } from "date-fns";
 import type { Job } from "@/@types/job";
 import { START_DATE } from "@/constants";
-import format from "date-fns/format";
-import formatDuration from "date-fns/formatDuration";
-import intervalToDuration from "date-fns/intervalToDuration";
 
 export function formatJobDate(dates: Job["dates"]) {
   const PATTERN = "MMM yyyy";

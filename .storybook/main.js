@@ -19,7 +19,6 @@ module.exports = {
     },
     "storybook-css-modules-preset",
     "storybook-dark-mode",
-    "@chromatic-com/storybook",
   ],
 
   webpackFinal: async config => {
