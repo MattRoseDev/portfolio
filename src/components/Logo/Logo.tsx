@@ -6,8 +6,8 @@ import { PageUrls } from "@/@enums/pages";
 
 export function Logo() {
   return (
-    <Link href={PageUrls.HOME} legacyBehavior>
-      <a className={styles.logo}>Matt Rose</a>
+    <Link href={PageUrls.HOME} className={styles.logo}>
+      Matt Rose
     </Link>
   );
 }
