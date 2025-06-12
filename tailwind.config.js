@@ -1,9 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const colors = require("tailwindcss/colors");
 
-/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -18,8 +21,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require("prettier-plugin-tailwindcss")],
+  plugins: [],
 };

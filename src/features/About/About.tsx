@@ -29,14 +29,14 @@ export function About() {
           <a
             className={styles.link}
             target="_blank"
-            href="https://chess.com/play/themattrose"
+            href="https://chess.com/play/mattrosedev"
             rel="noreferrer"
           >
             chess
           </a>{" "}
           and exploring the art of{" "}
-          <Link href={PageUrls.PHOTOS} legacyBehavior>
-            <a className={styles.link}>photography</a>
+          <Link href={PageUrls.PHOTOS} className={styles.link}>
+            photography
           </Link>
           .
           <br />

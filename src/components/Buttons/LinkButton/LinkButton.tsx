@@ -11,8 +11,8 @@ export function LinkButton(props: LinkButtonProps) {
   const classes = classNames(styles.button, className);
 
   return (
-    <Link href={href} legacyBehavior>
-      <a className={classes}>{children}</a>
+    <Link href={href} className={classes}>
+      {children}
     </Link>
   );
 }

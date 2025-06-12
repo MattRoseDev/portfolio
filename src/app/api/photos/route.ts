@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { NextResponse } from "next/server";
 import { createApi } from "unsplash-js";
 import "whatwg-fetch";
