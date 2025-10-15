@@ -1,0 +1,7 @@
+[test]
+# Configure test preload files (if you need to add setup files in the future)
+# preload = ["./test-setup.ts"]
+
+# Set the root directory for tests
+root = "./src"
+
