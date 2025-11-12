@@ -27,4 +27,8 @@
   & .description {
     @apply mt-3 text-center text-lg text-gray-100  lg:mt-5 lg:w-4/6 lg:text-xl;
   }
+
+  & .socialList {
+    @apply mt-6;
+  }
 }

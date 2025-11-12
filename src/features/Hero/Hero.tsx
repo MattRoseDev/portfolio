@@ -23,7 +23,7 @@ export function Hero() {
         Full Stack Engineer with over <strong>{experienceDuration}</strong> of
         experience developing web applications.
       </p>
-      <div className="mt-10">
+      <div className={styles.socialList}>
         <SocialList />
       </div>
     </Section>
