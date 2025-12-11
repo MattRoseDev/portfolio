@@ -10,7 +10,7 @@ import size from "lodash/size";
 export function Experience() {
   return (
     <Section id="experience" className={styles.wrapper}>
-      <Title className="ml-2">Work experience</Title>
+      <Title className={styles.title}>Work experience</Title>
 
       <div className={styles.experience}>
         {JOBS.map(({ company, role, labels, dates, techStack }, index) => (

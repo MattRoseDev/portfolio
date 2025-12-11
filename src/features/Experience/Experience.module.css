@@ -1,6 +1,10 @@
 .wrapper {
   @apply w-full max-w-5xl pl-2 pr-3 pt-14 lg:px-0 lg:pt-20;
 
+  & .title {
+    @apply ml-2;
+  }
+
   & .experience {
     & .section {
       @apply relative flex flex-row gap-2;
