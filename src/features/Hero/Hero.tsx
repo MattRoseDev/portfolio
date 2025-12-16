@@ -18,7 +18,7 @@ export function Hero() {
         <span>Hi, </span>
         <span>I&apos;m Matt.</span>
       </h2>
-      <h3 className={styles.smallHeading}>Brings ideas to life with code.</h3>
+      <h3 className={styles.smallHeading}>Bring ideas to life with code.</h3>
       <p className={styles.description}>
         Full Stack Engineer with over <strong>{experienceDuration}</strong> of
         experience developing web applications.

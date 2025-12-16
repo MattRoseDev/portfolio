@@ -14,8 +14,8 @@ export function About() {
         <Title>About Me</Title>
         <Description className={styles.description}>
           Top-notch Full Stack Engineer with over{" "}
-          <strong>{experienceDuration}</strong> years of experience tackling
-          complex software projects. Expertise in React and Node.js, with a deep
+          <strong>{experienceDuration}</strong> of experience tackling complex
+          software projects. Expertise in React and Node.js, with a deep
           understanding of their ecosystems. Proven ability to collaborate
           effectively and deliver high-quality solutions. Builds clean,
           efficient, and scalable code architectures for optimal performance and
