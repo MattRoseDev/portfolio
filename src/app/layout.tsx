@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Layout } from "@/components/Layout";
+import { experienceDuration } from "@/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,13 +29,13 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Full Stack Engineer with +4 years of experience developing web applications."
+          content={`Full Stack Engineer with +${experienceDuration} of experience developing web applications.`}
         />
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="Matt" />
         <meta
           itemProp="description"
-          content="Full Stack Engineer with +4 years of experience developing web applications."
+          content={`Full Stack Engineer with +${experienceDuration} of experience developing web applications.`}
         />
         <meta
           itemProp="image"
@@ -46,7 +47,7 @@ export default function RootLayout({
         <meta property="og:title" content="Matt" />
         <meta
           property="og:description"
-          content="Full Stack Engineer with +4 years of experience developing web applications."
+          content={`Full Stack Engineer with +${experienceDuration} of experience developing web applications.`}
         />
         <meta
           property="og:image"
@@ -57,7 +58,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Matt" />
         <meta
           name="twitter:description"
-          content="Full Stack Engineer with +4 years of experience developing web applications."
+          content={`Full Stack Engineer with +${experienceDuration} of experience developing web applications.`}
         />
         <meta
           name="twitter:image"
