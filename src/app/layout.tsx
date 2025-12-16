@@ -38,7 +38,7 @@ export default function RootLayout({
         />
         <meta
           itemProp="image"
-          content="https://mattrose.pro/images/avatars/matt.jpg"
+          content="https://mattrose.pro/images/avatars/1.jpg"
         />
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://mattrose.pro" />
@@ -50,7 +50,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://mattrose.pro/images/avatars/matt.jpg"
+          content="https://mattrose.pro/images/avatars/1.jpg"
         />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +61,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://mattrose.pro/images/avatars/matt.jpg"
+          content="https://mattrose.pro/images/avatars/1.jpg"
         />
       </head>
       <body className={inter.className}>
