@@ -74,7 +74,7 @@ export const JOBS: Job[] = [
   {
     company: "Learned.io",
     role: "Full Stack Engineer",
-    labels: ["Full-time", "🇳🇱 Utrecht"],
+    labels: ["Full-time"],
     dates: { start: "2022-08-01" },
     techStack: [
       "React.js",
@@ -87,11 +87,15 @@ export const JOBS: Job[] = [
       "MongoDB",
       "GCP",
     ],
+    location: {
+      flag: "FlagNetherlands",
+      address: "Utrecht, The Netherlands",
+    },
   },
   {
     company: "Pragmidea LTD",
     role: "Frontend Engineer",
-    labels: ["Full-time", "🏴󠁧󠁢󠁥󠁮󠁧󠁿 London", "Remote"],
+    labels: ["Full-time", "Remote"],
     dates: { start: "2020-09-01", end: "2022-08-01" },
     techStack: [
       "React.js",
@@ -104,11 +108,15 @@ export const JOBS: Job[] = [
       "Cypress",
       "React Testing Library",
     ],
+    location: {
+      flag: "FlagEngland",
+      address: "London, England",
+    },
   },
   {
     company: "Infosaba",
     role: "Full Stack Engineer",
-    labels: ["Full-time", "🇮🇷 Tehran"],
+    labels: ["Full-time"],
     dates: { start: "2018-11-01", end: "2020-09-01" },
     techStack: [
       "React.js",
@@ -118,13 +126,21 @@ export const JOBS: Job[] = [
       "Websocket",
       "Apollo GraphQL",
     ],
+    location: {
+      flag: "FlagIran",
+      address: "Tehran, Iran",
+    },
   },
   {
     company: "Tabaneh Shahr",
     role: "Frontend Engineer",
-    labels: ["Full-time", "🇮🇷 Tehran"],
+    labels: ["Full-time"],
     dates: { start: "2017-11-01", end: "2018-11-01" },
     techStack: ["React.js", "Redux", "Webpack", "Firebase", "Bootstrap"],
+    location: {
+      flag: "FlagIran",
+      address: "Tehran, Iran",
+    },
   },
 ];
 

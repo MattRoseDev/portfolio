@@ -15,10 +15,11 @@ export function formatJobDate(dates: Job["dates"]) {
   const endText = end ? format(durationDates.end, PATTERN) : "present";
   const durationText = formatDuration(intervalToDuration(durationDates), {
     format: ["years", "months"],
-    delimiter: ", ",
-  });
+  })
+    .replace("year", "yr")
+    .replace("month", "mo");
 
-  return `${startText} - ${endText} (${durationText})`;
+  return `${startText} - ${endText} · ${durationText}`;
 }
 
 export const experienceDuration = formatDuration(
