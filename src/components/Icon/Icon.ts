@@ -8,6 +8,9 @@ import ExternalLink from "./svg/external-link.svg";
 import Github from "./svg/github.svg";
 import Linkedin from "./svg/linkedin.svg";
 import Unsplash from "./svg/unsplash.svg";
+import FlagEngland from "./svg/flag-england.svg";
+import FlagIran from "./svg/flag-iran.svg";
+import FlagNetherlands from "./svg/flag-netherlands.svg";
 
 export const iconsList = {
   Unsplash,
@@ -17,6 +20,9 @@ export const iconsList = {
   ExternalLink,
   Github,
   Linkedin,
+  FlagEngland,
+  FlagIran,
+  FlagNetherlands,
 };
 
 export type IconNames = keyof typeof iconsList;
